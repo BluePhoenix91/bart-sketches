@@ -5,78 +5,88 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Sample Odds Report · bart consulting</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-<a href="index.html"><strong>bart consulting</strong></a>
-<nav aria-label="Main">
+<header class="site-header"><div class="wrap">
+<a class="logo" href="index.html">bart consulting</a>
+<nav class="nav" aria-label="Main">
 <a href="scan.html">Scan</a>
 <a href="report.html" aria-current="page">Report</a>
 <a href="cases.html">Cases</a>
 <a href="index.html#writing">Blog</a>
-<a href="call.html">Book a call</a>
+<a class="btn sm" href="call.html">Book a call</a>
 </nav>
-</header>
+</div></header>
 
 <main>
 
-<p><small>Sample report</small></p>
-<p>A full Odds Report for a fictional company. Yours has your commitments, your dates and your numbers.</p>
-<p><a href="report.html#book">Book the scoping call</a> <button type="button">Download as PDF</button></p>
+<section class="band" style="border-top:0"><div class="wrap" style="padding-top:28px;padding-bottom:28px">
+<div class="between">
+<div class="col" style="gap:4px;flex:1 1 520px">
+<p class="eyebrow">Sample report</p>
+<p class="ink" style="font-size:17px">A full Odds Report for a fictional company. Yours has your commitments, your dates and your numbers.</p>
+</div>
+<div class="btns"><a class="btn primary sm" href="report.html#book">Book the scoping call</a><button class="btn sm" type="button">Download as PDF</button></div>
+</div>
+</div></section>
 
-<article>
+<div class="paper">
+<article class="card">
 
-<p><small>Odds Report for</small><br><strong>AC-ME, a SaaS company</strong><br><small>11 January 2027 · Prepared by Bart Pinnock</small></p>
+<div class="between" style="border-bottom:1px solid #ccc;padding-bottom:24px;align-items:flex-start">
+<div><div class="meta">Odds Report for</div><div style="font-size:30px;font-weight:700;line-height:1.2">AC-ME, a SaaS company</div></div>
+<div class="right small"><div>11 January 2027</div><div>Prepared by Bart Pinnock</div></div>
+</div>
 
 <section>
-<p><small>Summary</small></p>
-<h1>What you need to know</h1>
-<p>Of the four commitments reviewed, two are at risk of missing their dates. Both show the same pattern: the team finishes less work per week than it used to. The other two are on track. One of them needs a weekly eye on scope to stay that way.</p>
+<div><p class="eyebrow">Summary</p><h1 class="md" style="margin-top:4px">What you need to know</h1></div>
+<p class="note" style="font-size:17px;padding:18px">Of the four commitments reviewed, two are at risk of missing their dates. Both show the same pattern: the team finishes less work per week than it used to. The other two are on track. One of them needs a weekly eye on scope to stay that way.</p>
 
-<table>
-<thead>
-<tr><th scope="col">Commitment</th><th scope="col">Dates</th></tr>
-</thead>
-<tbody>
-<tr>
-<td><small>CRITICAL · 28%</small><br><strong>Customer portal redesign</strong><br>Seven items stuck, 18 days old on average. Pace down 38% over six weeks.</td>
-<td>Committed Mar 31, 2027<br>Realistic May 26, 2027<br><strong>8 weeks late</strong></td>
-</tr>
-<tr>
-<td><small>AT RISK · 46%</small><br><strong>Payment infrastructure v2</strong><br>Close to a coin flip. Pace down 31% since two developers split their time.</td>
-<td>Committed Feb 15, 2027<br>Realistic Mar 1, 2027<br><strong>2 weeks late</strong></td>
-</tr>
-<tr>
-<td><small>ON TRACK · 81%</small><br><strong>Mobile app refresh</strong><br>Steady pace, stable scope. Nothing to do.</td>
-<td>Committed Apr 30, 2027<br>Realistic Apr 16, 2027<br><strong>2 weeks early</strong></td>
-</tr>
-<tr>
-<td><small>ON TRACK · 76%</small><br><strong>Internal reporting dashboard</strong><br>Healthy pace, no blockers. Scope has grown four weeks in a row.</td>
-<td>Committed May 31, 2027<br>Realistic May 14, 2027<br><strong>2.5 weeks early</strong></td>
-</tr>
-</tbody>
-</table>
+<div>
+<div class="status-row">
+<div><div class="st crit">CRITICAL · 28%</div><div class="strong" style="font-size:18px">Customer portal redesign</div><p style="font-size:15px">Seven items stuck, 18 days old on average. Pace down 38% over six weeks.</p></div>
+<div><div>Committed Mar 31, 2027</div><div>Realistic May 26, 2027</div><div class="strong crit">8 weeks late</div></div>
+</div>
+<div class="status-row">
+<div><div class="st risk">AT RISK · 46%</div><div class="strong" style="font-size:18px">Payment infrastructure v2</div><p style="font-size:15px">Close to a coin flip. Pace down 31% since two developers split their time.</p></div>
+<div><div>Committed Feb 15, 2027</div><div>Realistic Mar 1, 2027</div><div class="strong risk">2 weeks late</div></div>
+</div>
+<div class="status-row">
+<div><div class="st ok">ON TRACK · 81%</div><div class="strong" style="font-size:18px">Mobile app refresh</div><p style="font-size:15px">Steady pace, stable scope. Nothing to do.</p></div>
+<div><div>Committed Apr 30, 2027</div><div>Realistic Apr 16, 2027</div><div class="strong ok">2 weeks early</div></div>
+</div>
+<div class="status-row">
+<div><div class="st ok">ON TRACK · 76%</div><div class="strong" style="font-size:18px">Internal reporting dashboard</div><p style="font-size:15px">Healthy pace, no blockers. Scope has grown four weeks in a row.</p></div>
+<div><div>Committed May 31, 2027</div><div>Realistic May 14, 2027</div><div class="strong ok">2.5 weeks early</div></div>
+</div>
+</div>
 
-<h2>This week</h2>
-<ol>
+<div class="col tight">
+<h2 style="font-size:20px">This week</h2>
+<ol style="padding-left:22px">
 <li><strong>Customer portal:</strong> unblock the three items that haven't moved in two weeks. One owner each.</li>
 <li><strong>Payment infrastructure:</strong> decide between telling the client March 1 and cutting the reporting export from the February release.</li>
 <li><strong>Reporting dashboard:</strong> start a weekly scope check, and agree that odds under 70% trigger a conversation.</li>
 </ol>
+</div>
 </section>
 
 <section>
-<p><small>Commitment 1 of 4</small></p>
-<h2>Customer portal redesign</h2>
-<p><small>Started October 2026 · 8 developers · 110 items left</small></p>
-<p><strong>28%</strong> chance of March 31</p>
-<p>Committed: <strong>Mar 31, 2027</strong> · Realistic: <strong>May 26, 2027</strong> · Gap: <strong>8 weeks late</strong></p>
-
-<figure>
-<figcaption>Chance of being done by each date</figcaption>
-<svg role="img" aria-label="Forecast curve: 28% chance by March 31, 50% by May 26, near certain by September" viewBox="0 0 760 250">
+<div class="between" style="align-items:flex-start">
+<div><p class="eyebrow">Commitment 1 of 4</p><h2 style="margin-top:4px">Customer portal redesign</h2><p class="small" style="margin-top:4px">Started October 2026 · 8 developers · 110 items left</p></div>
+<div class="right"><div class="bignum crit">28%</div><div class="meta">chance of March 31</div></div>
+</div>
+<div class="tiles">
+<div class="tile"><b style="font-size:18px">Mar 31, 2027</b><span>Committed</span></div>
+<div class="tile"><b style="font-size:18px">May 26, 2027</b><span>Realistic</span></div>
+<div class="tile"><b style="font-size:18px">8 weeks late</b><span>Gap</span></div>
+</div>
+<figure class="col" style="gap:6px">
+<figcaption class="strong ink">Chance of being done by each date</figcaption>
+<svg role="img" aria-label="Forecast curve: 28% chance by March 31, 50% by May 26, near certain by September" viewBox="0 0 760 250" style="width:100%;height:auto;display:block;font-family:Inter,sans-serif">
 <line x1="0" y1="220" x2="760" y2="220" stroke="#999999" stroke-width="1"></line>
 <line x1="0" y1="170" x2="760" y2="170" stroke="#dddddd" stroke-width="1"></line>
 <line x1="0" y1="120" x2="760" y2="120" stroke="#dddddd" stroke-width="1"></line>
@@ -99,89 +109,92 @@
 <text x="720" y="240" font-size="11" fill="#555555">Sep</text>
 </svg>
 </figure>
-
+<div class="col tight">
 <h3>Why</h3>
-<ul>
+<ul style="gap:8px">
 <li>The team finished 38% less work over the past six weeks. Normally they finish 8 to 12 items a week. Recently that dropped to 5 to 7. The amount of work in progress hasn't changed, so the slowdown comes from work getting stuck, not from the team being stretched.</li>
 <li>Seven items are stuck. Five have been open longer than similar work usually takes. Three haven't moved at all in over two weeks.</li>
 <li>At the current pace the 110 remaining items take 16 to 22 weeks. At the normal pace, 9 to 14. March 31 is 11 weeks away, so the date only holds if the team is back at its normal pace within days. That is what the 28% says.</li>
 <li>22 items were added since kickoff, 20% more than planned. Some may be fixes for earlier work.</li>
 </ul>
-
+</div>
+<div class="note col tight" style="padding:20px">
 <h3>What to do</h3>
-<ol>
-<li>This week, take the three items that haven't moved in two weeks. Find what blocks each one and give each a single owner.</li>
-<li>Stop adding work to this commitment until the stuck items are cleared.</li>
-<li>Go through the 22 added items with the team lead. Separate new requirements from rework. If most of it is rework, the cause sits earlier in the process.</li>
-<li>Don't add people. This team delivers steadily when nothing is in the way. More people on a blocked team raises the cost, not the pace.</li>
+<ol style="padding-left:22px;gap:8px">
+<li class="ink">This week, take the three items that haven't moved in two weeks. Find what blocks each one and give each a single owner.</li>
+<li class="ink">Stop adding work to this commitment until the stuck items are cleared.</li>
+<li class="ink">Go through the 22 added items with the team lead. Separate new requirements from rework. If most of it is rework, the cause sits earlier in the process.</li>
+<li class="ink">Don't add people. This team delivers steadily when nothing is in the way. More people on a blocked team raises the cost, not the pace.</li>
 </ol>
+</div>
 </section>
 
 <section>
-<p><small>Commitment 2 of 4</small></p>
-<h2>Payment infrastructure v2</h2>
-<p><small>Started November 2026 · 5 developers · 30 items left</small></p>
-<p><strong>46%</strong> chance of February 15</p>
-<p>Committed: <strong>Feb 15, 2027</strong> · Realistic: <strong>Mar 1, 2027</strong> · Gap: <strong>2 weeks late</strong></p>
-
+<div class="between" style="align-items:flex-start">
+<div><p class="eyebrow">Commitment 2 of 4</p><h2 style="margin-top:4px">Payment infrastructure v2</h2><p class="small" style="margin-top:4px">Started November 2026 · 5 developers · 30 items left</p></div>
+<div class="right"><div class="bignum risk">46%</div><div class="meta">chance of February 15</div></div>
+</div>
+<div class="tiles">
+<div class="tile"><b style="font-size:18px">Feb 15, 2027</b><span>Committed</span></div>
+<div class="tile"><b style="font-size:18px">Mar 1, 2027</b><span>Realistic</span></div>
+<div class="tile"><b style="font-size:18px">2 weeks late</b><span>Gap</span></div>
+</div>
+<div class="col tight">
 <h3>Why</h3>
-<ul>
+<ul style="gap:8px">
 <li>This one is close to a coin flip. At the current pace of 4 to 6 items a week, the 30 remaining items take 5 to 7.5 weeks. February 15 is 5 weeks away.</li>
 <li>The team finished 31% less per week over the past six weeks. Since December, two of the five developers split their time with the customer portal.</li>
 <li>Scope is stable. Nothing was added in the last four weeks.</li>
 </ul>
-
+</div>
+<div class="note col tight" style="padding:20px">
 <h3>What to do</h3>
-<ol>
-<li>Decide this week: tell the client March 1, or cut the reporting export from the February release.</li>
-<li>If the date has to hold, give the two shared developers back to this team until February 15. That costs the customer portal, so decide both together.</li>
-<li>Look again in two weeks. If the odds are under 40% by then, move the date.</li>
+<ol style="padding-left:22px;gap:8px">
+<li class="ink">Decide this week: tell the client March 1, or cut the reporting export from the February release.</li>
+<li class="ink">If the date has to hold, give the two shared developers back to this team until February 15. That costs the customer portal, so decide both together.</li>
+<li class="ink">Look again in two weeks. If the odds are under 40% by then, move the date.</li>
 </ol>
+</div>
 </section>
 
 <section>
-<p><small>Commitments 3 and 4 of 4</small></p>
-<h2>The two that are on track</h2>
-<h3>Mobile app refresh</h3>
-<p><small>ON TRACK · 81%</small></p>
-<p>Consistent pace and stable scope. The realistic date is two weeks before April 30. No action needed.</p>
-<h3>Internal reporting dashboard</h3>
-<p><small>ON TRACK · 76%</small></p>
-<p>No action needed on delivery. Scope has grown four weeks in a row, by 2 to 3 items a week while the team finishes 6 to 9. Agree a threshold now: under 70%, or less than one week of buffer, and you talk about scope.</p>
+<div><p class="eyebrow">Commitments 3 and 4 of 4</p><h2 style="margin-top:4px">The two that are on track</h2></div>
+<div class="grid g2" style="gap:20px">
+<div class="card line" style="border-radius:8px;padding:20px;gap:8px"><div class="st ok">ON TRACK · 81%</div><h3>Mobile app refresh</h3><p style="font-size:15px">Consistent pace and stable scope. The realistic date is two weeks before April 30. No action needed.</p></div>
+<div class="card line" style="border-radius:8px;padding:20px;gap:8px"><div class="st ok">ON TRACK · 76%</div><h3>Internal reporting dashboard</h3><p style="font-size:15px">No action needed on delivery. Scope has grown four weeks in a row, by 2 to 3 items a week while the team finishes 6 to 9. Agree a threshold now: under 70%, or less than one week of buffer, and you talk about scope.</p></div>
+</div>
 </section>
 
 <section>
-<p><small>Method</small></p>
-<h2>How these numbers were made</h2>
-<h3>The data</h3>
-<p>Workflow data from Jira Cloud, January 2026 to January 2027: when items moved between statuses, when they were created and resolved, blocker flags. No descriptions, comments or code.</p>
-<h3>The odds</h3>
-<p>Each commitment was simulated 10,000 times. Every run draws weekly results from the team's own history and plays the remaining work forward. The odds are the share of runs that finished by the committed date.</p>
-<h3>The realistic date</h3>
-<p>The median: half of the runs finished earlier, half later. It is not a guarantee.</p>
-<h3>The limits</h3>
-<p>This is how things stand today. If scope changes, blockers clear or people move, the odds move with them. The model can't see what has never happened to these teams.</p>
+<div><p class="eyebrow">Method</p><h2 style="margin-top:4px">How these numbers were made</h2></div>
+<div class="grid g2" style="gap:20px 32px">
+<div><h3 style="font-size:17px">The data</h3><p style="font-size:15px;margin-top:4px">Workflow data from Jira Cloud, January 2026 to January 2027: when items moved between statuses, when they were created and resolved, blocker flags. No descriptions, comments or code.</p></div>
+<div><h3 style="font-size:17px">The odds</h3><p style="font-size:15px;margin-top:4px">Each commitment was simulated 10,000 times. Every run draws weekly results from the team's own history and plays the remaining work forward. The odds are the share of runs that finished by the committed date.</p></div>
+<div><h3 style="font-size:17px">The realistic date</h3><p style="font-size:15px;margin-top:4px">The median: half of the runs finished earlier, half later. It is not a guarantee.</p></div>
+<div><h3 style="font-size:17px">The limits</h3><p style="font-size:15px;margin-top:4px">This is how things stand today. If scope changes, blockers clear or people move, the odds move with them. The model can't see what has never happened to these teams.</p></div>
+</div>
 </section>
 
-<section>
-<h2>What happens next</h2>
+<section style="gap:10px">
+<h2 style="font-size:24px">What happens next</h2>
 <p>On 8 February I run the same numbers again and send you a short note on what moved. If you want a hand clearing what's in the way of the customer portal team, that is a conversation about the Delivery Realign.</p>
 </section>
 
 </article>
+</div>
 
-<section>
+<section class="dark"><div class="wrap">
 <h2>Want this for your own dates?</h2>
-<p>Up to five commitments, €4,500 fixed. It starts with a 30 minute call.</p>
-<p><a href="report.html#book">Book the scoping call</a> · <a href="report.html">Back to the report page</a></p>
-</section>
+<p class="lead">Up to five commitments, €4,500 fixed. It starts with a 30 minute call.</p>
+<div class="btns"><a class="btn" href="report.html#book">Book the scoping call</a><a class="btn ghost" href="report.html">Back to the report page</a></div>
+</div></section>
 
 </main>
 
-<footer>
-<p>bart consulting · Bart Pinnock · Ghent, Belgium</p>
-<p><a href="scan.html">Delivery Scan</a> · <a href="report.html">Odds Report</a> · <a href="realign.html">Delivery Realign</a> · <a href="method.html">Method and data</a> · <a href="#privacy">Privacy</a></p>
-</footer>
+<footer class="site-footer"><div class="wrap">
+<div>bart consulting · Bart Pinnock · Ghent, Belgium</div>
+<nav aria-label="Footer"><a href="scan.html">Delivery Scan</a><a href="report.html">Odds Report</a><a href="realign.html">Delivery Realign</a><a href="method.html">Method and data</a><a href="#privacy">Privacy</a></nav>
+</div></footer>
 
 </body>
 </html>

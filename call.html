@@ -5,75 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Book a call · bart consulting</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-<a href="index.html"><strong>bart consulting</strong></a>
-<nav aria-label="Main">
+<header class="site-header"><div class="wrap">
+<a class="logo" href="index.html">bart consulting</a>
+<nav class="nav" aria-label="Main">
 <a href="scan.html">Scan</a>
 <a href="report.html">Report</a>
 <a href="cases.html">Cases</a>
 <a href="index.html#writing">Blog</a>
-<a href="call.html" aria-current="page">Book a call</a>
+<a class="btn sm" href="call.html" aria-current="page">Book a call</a>
 </nav>
-</header>
+</div></header>
 
 <main>
 
+<section><div class="wrap" style="padding-bottom:24px;gap:12px">
 <h1>Book a call</h1>
-<p>30 minutes, free. No pitch, no slides. You pick the slot, it's in your calendar straight away.</p>
+<p class="lead">30 minutes, free. No pitch, no slides. You pick the slot, it's in your calendar straight away.</p>
+</div></section>
 
-<form action="#">
+<section><div class="wrap" style="padding-top:24px;padding-bottom:72px">
+<div class="split top">
 
+<div class="col" style="gap:28px;flex-basis:400px">
 <fieldset>
-<legend>What is it about?</legend>
-<label><input type="radio" name="topic" value="readout" checked> <strong>Read my Scan result with me</strong><br><small>Bring the card. I tell you what I would look at first.</small></label>
-<label><input type="radio" name="topic" value="report"> <strong>Scope an Odds Report</strong><br><small>Which commitments go in, and when you get it.</small></label>
-<label><input type="radio" name="topic" value="other"> <strong>Something else</strong><br><small>You're not sure where to start. That's fine.</small></label>
+<legend style="font-size:19px">What is it about?</legend>
+<label class="option"><input type="radio" name="topic" value="readout" checked><span><b>Read my Scan result with me</b><small>Bring the card. I tell you what I would look at first.</small></span></label>
+<label class="option"><input type="radio" name="topic" value="report"><span><b>Scope an Odds Report</b><small>Which commitments go in, and when you get it.</small></span></label>
+<label class="option"><input type="radio" name="topic" value="other"><span><b>Something else</b><small>You're not sure where to start. That's fine.</small></span></label>
 </fieldset>
+<div class="col tight">
+<h2 style="font-size:19px">What happens on the call</h2>
+<ul><li>You tell me which dates worry you and what you've tried.</li><li>I tell you what I'd do next, and whether that involves me.</li><li>If I can't help, I say so.</li></ul>
+</div>
+<p class="small" style="font-size:15px">Rather write? <a href="mailto:bart.pinnock@nimflex.be">bart.pinnock@nimflex.be</a></p>
+</div>
 
-<fieldset>
-<legend>Pick a slot <small>(Brussels time)</small></legend>
-<p><strong>Tue 24 Nov</strong></p>
-<label><input type="radio" name="slot" value="2026-11-24T09:30"> 09:30</label>
-<label><input type="radio" name="slot" value="2026-11-24T11:00"> 11:00</label>
-<label><input type="radio" name="slot" value="2026-11-24T14:00"> 14:00</label>
-<p><strong>Wed 25 Nov</strong></p>
-<label><input type="radio" name="slot" value="2026-11-25T09:00"> 09:00</label>
-<label><input type="radio" name="slot" value="2026-11-25T13:30" checked> 13:30</label>
-<label><input type="radio" name="slot" value="2026-11-25T16:00"> 16:00</label>
-<p><strong>Thu 26 Nov</strong></p>
-<label><input type="radio" name="slot" value="2026-11-26T10:00"> 10:00</label>
-<label><input type="radio" name="slot" value="2026-11-26T11:30"> 11:30</label>
-<label><input type="radio" name="slot" value="2026-11-26T15:00"> 15:00</label>
-<p><button type="button">Show later dates</button></p>
-</fieldset>
-
-<label>Name <input type="text" name="name" autocomplete="name"></label>
-<label>Work email <input type="email" name="email" autocomplete="email"></label>
-
-<p><button type="submit">Confirm Wednesday 25 November, 13:30</button></p>
-<p><small>You get a calendar invite with a video link. Nothing else lands in your inbox.</small></p>
+<form class="card heavy" style="gap:20px;flex-basis:480px" action="#">
+<div class="between"><h2 style="font-size:19px">Pick a slot</h2><span class="small">Brussels time</span></div>
+<div class="slots">
+<div><b style="font-size:14px">Tue 24 Nov</b><button class="slot" type="button">09:30</button><button class="slot" type="button">11:00</button><button class="slot" type="button">14:00</button></div>
+<div><b style="font-size:14px">Wed 25 Nov</b><button class="slot" type="button">09:00</button><button class="slot" type="button" aria-pressed="true">13:30</button><button class="slot" type="button">16:00</button></div>
+<div><b style="font-size:14px">Thu 26 Nov</b><button class="slot" type="button">10:00</button><button class="slot" type="button">11:30</button><button class="slot" type="button">15:00</button></div>
+</div>
+<button class="textbtn" type="button">Show later dates</button>
+<div class="grid g2" style="gap:12px">
+<label class="field">Name<input type="text" name="name" autocomplete="name"></label>
+<label class="field">Work email<input type="email" name="email" autocomplete="email"></label>
+</div>
+<button class="btn primary block" type="submit">Confirm Wednesday 25 November, 13:30</button>
+<p class="meta">You get a calendar invite with a video link. Nothing else lands in your inbox.</p>
 </form>
 
-<section>
-<h2>What happens on the call</h2>
-<ul>
-<li>You tell me which dates worry you and what you've tried.</li>
-<li>I tell you what I'd do next, and whether that involves me.</li>
-<li>If I can't help, I say so.</li>
-</ul>
-<p>Rather write? <a href="mailto:bart.pinnock@nimflex.be">bart.pinnock@nimflex.be</a></p>
-</section>
+</div>
+</div></section>
 
 </main>
 
-<footer>
-<p>bart consulting · Bart Pinnock · Ghent, Belgium</p>
-<p><a href="scan.html">Delivery Scan</a> · <a href="report.html">Odds Report</a> · <a href="realign.html">Delivery Realign</a> · <a href="method.html">Method and data</a> · <a href="#privacy">Privacy</a></p>
-</footer>
+<footer class="site-footer"><div class="wrap">
+<div>bart consulting · Bart Pinnock · Ghent, Belgium</div>
+<nav aria-label="Footer"><a href="scan.html">Delivery Scan</a><a href="report.html">Odds Report</a><a href="realign.html">Delivery Realign</a><a href="method.html">Method and data</a><a href="#privacy">Privacy</a></nav>
+</div></footer>
 
 </body>
 </html>

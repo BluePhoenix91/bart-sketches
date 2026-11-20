@@ -5,28 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Block that ends every article · bart consulting</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<main>
+<main class="wrap" style="max-width:760px;padding:32px;gap:20px">
 
-<p>…last paragraph of the article ends here.</p>
+<p class="small" style="font-size:15px;border-bottom:1px solid #ccc;padding-bottom:16px">…last paragraph of the article ends here.</p>
 
-<!-- Block that ends every article: copy from here -->
-<aside aria-labelledby="article-end-title">
-<p><small>Your own numbers</small></p>
-<h2 id="article-end-title">What are the odds on your date?</h2>
-<p>The Scan does what this article describes, with your own tracker. Three minutes, read-only, no signup.</p>
-<p><a href="scan.html">Run the free Scan</a></p>
-<p><a href="#tail">No Jira access right now? Upload a CSV to the Tail check →</a></p>
-
-<p><small>Example result</small> · <strong>AT RISK</strong></p>
-<p><strong>34%</strong> chance of shipping <strong>67 items</strong> by <strong>March 15</strong></p>
-<meter min="0" max="100" value="34">34%</meter>
-<p>Realistic: <strong>May 24, 2027</strong> · Gap: <strong>10 weeks late</strong></p>
+<!-- Block that ends every article -->
+<aside class="card heavy" style="padding:28px" aria-labelledby="article-end-title">
+<div class="endblock">
+<div class="col" style="gap:12px">
+<p class="label">Your own numbers</p>
+<h2 id="article-end-title" class="sm">What are the odds on your date?</h2>
+<p style="font-size:16px">The Scan does what this article describes, with your own tracker. Three minutes, read-only, no signup.</p>
+<a class="btn primary self-start" href="scan.html">Run the free Scan</a>
+<a class="strong" href="#tail" style="font-size:15px">No Jira access right now? Upload a CSV to the Tail check →</a>
+</div>
+<div class="result sm" aria-label="Example result">
+<div class="head"><span class="label" style="font-size:11px">Example result</span><span class="pill" style="font-size:11px">AT RISK</span></div>
+<div class="odds stack-odds"><span class="pct">34%</span><span style="font-size:14px">chance of shipping <strong>67 items</strong> by <strong>March 15</strong></span></div>
+<div class="bar" style="height:10px"><i style="left:34%;width:20px;height:20px;margin-left:-10px"></i></div>
+<div class="dates" style="padding-top:12px"><div><small style="font-size:11px">Realistic</small><b>May 24, 2027</b></div><div><small style="font-size:11px">Gap</small><b>10 weeks late</b></div></div>
+</div>
+</div>
 </aside>
-<!-- to here -->
 
 </main>
 

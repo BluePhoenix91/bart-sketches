@@ -5,95 +5,83 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Delivery Scan (phone) · bart consulting</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="phone">
 
-<header>
-<a href="index.html"><strong>bart consulting</strong></a>
-<nav aria-label="Main">
-<a href="scan.html" aria-current="page">Scan</a>
-<a href="report.html">Report</a>
-<a href="cases.html">Cases</a>
-<a href="index.html#writing">Blog</a>
-<a href="call.html">Book a call</a>
-</nav>
-</header>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="index.html">bart consulting</a>
+<button class="btn sm" type="button">Menu</button>
+</div></header>
 
 <main>
 
-<section>
-<p>Free Delivery Scan</p>
+<section><div class="wrap">
+<p class="eyebrow">Free Delivery Scan</p>
 <h1>Before you promise the date, get the odds.</h1>
-<p>Your tracker knows how fast your team really finishes work. The Scan reads that pace and puts a chance next to the date you're about to give.</p>
-<p><small>Three minutes on a laptop · read-only · no signup</small></p>
-</section>
+<p class="lead">Your tracker knows how fast your team really finishes work. The Scan reads that pace and puts a chance next to the date you're about to give.</p>
+<p class="small">Three minutes on a laptop · read-only · no signup</p>
+<button class="btn primary block" type="button">Send it to my laptop</button>
+<p class="meta">Opens your share sheet. Mail it to yourself or copy the link. You need Jira or Azure DevOps open to run it.</p>
+</div></section>
 
-<section>
-<button type="button">Send it to my laptop</button>
-<p><small>Opens your share sheet. Mail it to yourself or copy the link. You need Jira or Azure DevOps open to run it.</small></p>
-</section>
-
-<section>
-<h2>Not the one with Jira access?</h2>
+<section><div class="wrap" style="padding-top:0">
+<div class="card strong">
+<h2 class="xs" style="font-size:18px">Not the one with Jira access?</h2>
 <p>Forward it to your lead developer, or whoever can connect the tracker. This is what they get:</p>
-<p>
-<button type="button" aria-pressed="true">English</button>
-<button type="button" aria-pressed="false">Nederlands</button>
-</p>
-<blockquote>Can you run this on the project we're about to put a date on? It reads our Jira history and gives the chance we make that date. Read-only, three minutes, nothing stored.<br>bart.consulting/scan</blockquote>
-<p>
-<button type="button">Forward it</button>
-<button type="button">Copy message</button>
-</p>
-</section>
+<div class="toggle"><button type="button" aria-pressed="true">English</button><button type="button" aria-pressed="false">Nederlands</button></div>
+<p class="note">Can you run this on the project we're about to put a date on? It reads our Jira history and gives the chance we make that date. Read-only, three minutes, nothing stored.<br><span class="meta">bart.consulting/scan</span></p>
+<div class="btns"><button class="btn sm" type="button" style="flex:1">Forward it</button><button class="btn sm" type="button" style="flex:1">Copy message</button></div>
+</div>
+<a class="strong" href="scan-result.html">I have Jira access on this phone. Connect now →</a>
+</div></section>
 
-<section>
-<p><a href="scan-result.html">I have Jira access on this phone. Connect now →</a></p>
-</section>
-
-<section>
+<section class="band"><div class="wrap">
 <h2>What comes back</h2>
-<aside aria-label="Example result">
-<p><small>Example result</small> · <strong>AT RISK</strong></p>
-<p><strong>34%</strong> chance of shipping <strong>67 items</strong> by <strong>March 15</strong></p>
-<meter min="0" max="100" value="34">34%</meter>
-<p>Realistic: <strong>May 24, 2027</strong> · Gap: <strong>10 weeks late</strong></p>
-<ul>
-<li><strong>Ship later</strong>: Mar 15 → May 24</li>
-<li><strong>Ship less</strong>: 67 → 42 items</li>
-<li><strong>Ship faster</strong>: 50% more speed</li>
-</ul>
+<aside class="result" aria-label="Example result">
+<div class="head"><span class="label">Example result</span><span class="pill">AT RISK</span></div>
+<div class="odds stack-odds"><span class="pct">34%</span><span>chance of shipping <strong>67 items</strong> by <strong>March 15</strong></span></div>
+<div>
+<div class="scale"><span>MISS LIKELY</span><span>COIN FLIP</span><span>HIT LIKELY</span></div>
+<div class="bar"><i style="left:34%"></i></div>
+</div>
+<div class="dates"><div><small>Realistic</small><b>May 24, 2027</b></div><div><small>Gap</small><b>10 weeks late</b></div></div>
+<div class="list-options">
+<div><b>Ship later</b><span>Mar 15 → May 24</span></div>
+<div><b>Ship less</b><span>67 → 42 items</span></div>
+<div><b>Ship faster</b><span>50% more speed</span></div>
+</div>
 </aside>
-</section>
+</div></section>
 
-<section>
-<p>Why a chance and not a date</p>
+<section><div class="wrap">
+<p class="eyebrow">Why a chance and not a date</p>
 <h2>Same estimate. Days or weeks.</h2>
 <p>I checked 880 software tasks with the same kind of work, the same estimate and the same process. Half were done within three days. One in twenty took longer than four weeks.</p>
-<p><a href="index.html#writing">Read the analysis →</a></p>
-</section>
+<a class="strong" href="index.html#writing">Read the analysis →</a>
+</div></section>
 
-<section>
-<h2>Your data</h2>
+<section class="rule"><div class="wrap">
+<h2 style="font-size:18px">Your data</h2>
 <ul>
 <li>Read-only. I see status changes, dates and issue types.</li>
 <li>No titles, descriptions, comments or names.</li>
 <li>Held in memory for 60 minutes, then deleted.</li>
 </ul>
-</section>
+</div></section>
 
-<section>
+<section class="dark"><div class="wrap" style="align-items:stretch">
 <h2>Get the odds before the date goes out.</h2>
-<button type="button">Send it to my laptop</button>
-</section>
+<button class="btn block" type="button">Send it to my laptop</button>
+</div></section>
 
 </main>
 
-<footer>
-<p>bart consulting · Bart Pinnock · Ghent, Belgium</p>
-<p><a href="report.html">Odds Report</a> · <a href="method.html">Method and data</a> · <a href="#privacy">Privacy</a></p>
-</footer>
+<footer class="site-footer"><div class="wrap">
+<div>bart consulting · Bart Pinnock · Ghent, Belgium</div>
+<nav aria-label="Footer"><a href="report.html">Odds Report</a><a href="method.html">Method and data</a><a href="#privacy">Privacy</a></nav>
+</div></footer>
 
 </body>
 </html>

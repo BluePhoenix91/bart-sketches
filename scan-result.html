@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex">
 <title>Scan result · bart consulting</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -14,7 +14,7 @@
 <a class="logo" href="index.html">bart consulting</a>
 <nav class="nav" aria-label="Main">
 <a href="scan.html" aria-current="page">Scan</a>
-<a href="report.html">Report</a>
+<a href="forecast.html">Forecast</a>
 <a href="cases.html">Cases</a>
 <a href="index.html#writing">Blog</a>
 <a class="btn sm" href="call.html">Book a call</a>
@@ -24,14 +24,14 @@
 <main>
 
 <section class="band" style="border-top:0"><div class="wrap" style="padding-top:18px;padding-bottom:18px">
-<div class="between" style="font-size:15px">
+<div class="between" style="font-size:15px;gap:16px">
 <div><strong>Customer portal</strong> · 67 open items · target March 15, 2027 · <a href="scan.html">Change project or date</a></div>
 <div class="meta" style="font-size:15px">Your data is deleted in 47 minutes. Save the card first.</div>
 </div>
 </div></section>
 
 <section><div class="wrap" style="padding-top:48px">
-<div class="split top">
+<div class="split top" style="gap:48px">
 
 <div class="col">
 <h1 style="font-size:30px;line-height:1.2">Your result</h1>
@@ -52,44 +52,54 @@
 <div><small>Pace</small><b>Ship faster</b>50% more speed</div>
 </div>
 </div>
-<p class="meta" style="font-size:12px">Read what this means at bart.consulting/number</p>
+<div class="card-foot split-line"><span>What this means: bart.consulting/number</span><span>Run your own: bart.consulting/scan</span></div>
 </aside>
-<div class="btns"><button class="btn sm" type="button">Download the card</button><button class="btn sm" type="button">Copy as image</button></div>
+<div class="btns" style="gap:10px"><button class="btn sm" type="button">Download the card</button><button class="btn sm" type="button">Copy as image</button></div>
+
+<form class="card heavy" style="padding:22px;gap:12px;margin-top:8px" action="#">
+<h2 style="font-size:20px;line-height:1.25">See where this stands in two weeks</h2>
+<p>I'll email you this result and a reminder. You sign in again, your selection is still there, and you see what moved since today.</p>
+<div class="inline-form">
+<label class="field">Work email<input type="email" name="email" autocomplete="email"></label>
+<button class="btn primary sm" type="submit" style="min-height:44px">Remind me</button>
+</div>
+<p class="meta"><strong>Only if you ask for this, I keep:</strong> your email address, the project and items you selected, your date and this result. <strong>I never keep:</strong> anything from your tracker, or your sign-in.</p>
+</form>
 </div>
 
 <div class="col">
 <h2 style="font-size:30px">What now?</h2>
-<article class="card heavy">
-<h3>Find out why, and how your other dates stand</h3>
-<p>This is one date on one project. The Odds Report covers up to five commitments, explains each gap in plain language and says what to do this week. €4,500, fixed.</p>
-<a class="btn primary sm self-start" href="report.html">See what's in the report</a>
+<article class="card heavy" style="padding:22px">
+<h3>Talk it through</h3>
+<p>The number says how likely. It doesn't say why. In 30 minutes, free, I read the result with you and tell you what I would look at first.</p>
+<a class="btn primary sm self-start" href="call.html">Book a read-out</a>
 </article>
-<article class="card line">
+<article class="card line" style="padding:22px">
 <h3>Show it to whoever needs to see it</h3>
 <p>The card carries a link that explains the number to the person who receives it. A message to go with it:</p>
 <p class="note">I ran our delivery data through an outside forecast. March 15 has a 34% chance, and the realistic date is May 24. Before we promise anything else, I want to decide which of the three options we take: later, less or faster.</p>
-<div class="btns"><button class="btn sm" type="button">Copy message</button><a class="strong" href="number.html">See the page they land on →</a></div>
+<div class="btns" style="gap:10px"><button class="btn sm" type="button">Copy message</button><a class="strong" href="number.html" style="font-size:15px">See the page they land on →</a></div>
 </article>
-<article class="card line">
-<h3>Talk it through</h3>
-<p>30 minutes, free. I read the result with you and tell you what I would look at first.</p>
-<a class="btn sm self-start" href="call.html">Book a read-out</a>
+<article class="card line" style="padding:22px">
+<h3>Get all your dates on one page</h3>
+<p>This is one date on one project. The Delivery Forecast covers up to five promised dates, explains each gap, says what to do this week, and gives you one page to show your CEO or board. €4,500, one time.</p>
+<a class="btn sm self-start" href="forecast.html">See what's in the forecast</a>
 </article>
 </div>
 
 </div>
 </div></section>
 
-<section class="band"><div class="wrap">
+<section class="band"><div class="wrap" style="padding-top:56px;padding-bottom:56px">
 <h2 style="font-size:28px">What this number says, and what it doesn't</h2>
 <div class="grid g2">
 <div class="card"><h3>It says</h3><ul><li>How fast your team finished work in the last twelve weeks, fast weeks and slow weeks included.</li><li>What happens when that pace meets the 67 items still open, simulated 10,000 times.</li><li>That 34 in 100 of those simulations finished by March 15.</li></ul></div>
-<div class="card"><h3>It doesn't say</h3><ul><li>Why work is slow or stuck.</li><li>How your other commitments stand.</li><li>Anything about things that have never happened to your team before.</li></ul><a class="strong" href="method.html">Method and data →</a></div>
+<div class="card"><h3>It doesn't say</h3><ul><li>Why work is slow or stuck.</li><li>How your other dates stand.</li><li>Anything about things that have never happened to your team before.</li></ul><a class="strong" href="method.html">Method and data →</a></div>
 </div>
 </div></section>
 
-<section><div class="wrap tight">
-<div class="between">
+<section><div class="wrap" style="padding-top:48px;padding-bottom:48px">
+<div class="between" style="gap:32px">
 <div class="col tight" style="flex:1 1 520px">
 <h2 class="xs">Look back instead of forward</h2>
 <p>How long did your slowest work really take? The tail view shows it from the same data, while you're connected.</p>
@@ -102,7 +112,7 @@
 
 <footer class="site-footer"><div class="wrap">
 <div>bart consulting · Bart Pinnock · Ghent, Belgium</div>
-<nav aria-label="Footer"><a href="#tail">Tail check</a><a href="report.html">Odds Report</a><a href="method.html">Method and data</a><a href="#privacy">Privacy</a></nav>
+<nav aria-label="Footer"><a href="#tail">Tail check</a><a href="forecast.html">Delivery Forecast</a><a href="method.html">Method and data</a><a href="#privacy">Privacy</a></nav>
 </div></footer>
 
 </body>

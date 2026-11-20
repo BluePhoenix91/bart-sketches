@@ -1,0 +1,16 @@
+/* Optional. Every page reads fine without this file. */
+body { font-family: system-ui, sans-serif; line-height: 1.5; color: #1a1a1a; max-width: 48rem; margin: 0 auto; padding: 1rem 1.25rem; }
+a { color: inherit; }
+header { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid #ccc; }
+nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+[aria-current="page"] { font-weight: 700; }
+section, article { margin: 2.5rem 0; }
+aside, form, details { border: 1px solid #999; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+fieldset { border: 0; padding: 0; margin: 0 0 1rem; }
+label { display: block; margin: .5rem 0; }
+meter { width: 100%; }
+blockquote { margin: 1rem 0; padding-left: 1rem; border-left: 3px solid #ccc; }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; vertical-align: top; padding: .5rem; border-bottom: 1px solid #ddd; }
+svg { max-width: 100%; height: auto; }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ccc; font-size: .9rem; }

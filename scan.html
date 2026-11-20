@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Delivery Scan · bart consulting</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<a href="index.html"><strong>bart consulting</strong></a>
+<nav aria-label="Main">
+<a href="scan.html" aria-current="page">Scan</a>
+<a href="report.html">Report</a>
+<a href="cases.html">Cases</a>
+<a href="index.html#writing">Blog</a>
+<a href="call.html">Book a call</a>
+</nav>
+</header>
+
+<main>
+
+<section>
+<p>Free Delivery Scan</p>
+<h1>Before you promise the date, get the odds.</h1>
+<p>Your tracker knows how fast your team really finishes work. Connect it read-only, pick the project and the date, and see the chance you make it.</p>
+
+<form id="scan" action="scan-result.html">
+<ol>
+<li aria-current="step"><strong>Source</strong></li>
+<li>Project</li>
+<li>Date</li>
+</ol>
+<fieldset>
+<legend>Where does your team track work?</legend>
+<label><input type="radio" name="source" value="jira" checked> <strong>Jira</strong><br><small>Atlassian Cloud. Status changes and resolved dates from the last twelve weeks.</small></label>
+<label><input type="radio" name="source" value="ado"> <strong>Azure DevOps</strong><br><small>Services and Server 2019 and up. State transitions and closed dates from the last twelve weeks.</small></label>
+</fieldset>
+<button type="submit">Connect Jira</button>
+<p><small>Read-only · held in memory · deleted after 60 minutes · no signup</small></p>
+</form>
+
+<aside aria-label="Example result">
+<p><small>Example result</small> · <strong>AT RISK</strong></p>
+<p><strong>34%</strong> chance of shipping <strong>67 items</strong> by <strong>March 15</strong></p>
+<meter min="0" max="100" value="34">34%</meter>
+<p>Realistic: <strong>May 24, 2027</strong> · Gap: <strong>10 weeks late</strong></p>
+<p>Three ways to close the gap:</p>
+<ul>
+<li>Time: <strong>Ship later</strong>, Mar 15 → May 24</li>
+<li>Scope: <strong>Ship less</strong>, 67 → 42 items</li>
+<li>Pace: <strong>Ship faster</strong>, 50% more speed</li>
+</ul>
+</aside>
+<p>This is what you get: a card you can show in the next meeting.</p>
+</section>
+
+<section>
+<p><strong>Not at your laptop, or not the one with Jira access?</strong></p>
+<p><a href="scan-phone.html">Send this page to my laptop</a> · <a href="scan-phone.html">Forward it to whoever has access</a></p>
+</section>
+
+<section>
+<h2>How it works</h2>
+<ol>
+<li>
+<h3>Connect your source</h3>
+<p>Read-only, with the narrowest scope Jira and Azure DevOps offer. I can't change, create or delete anything.</p>
+</li>
+<li>
+<h3>Pick the project and the date</h3>
+<p>Choose the project that worries you. Check how your statuses map to planned, in progress and done. Enter the date you promised, or the one you're about to.</p>
+</li>
+<li>
+<h3>Get the odds</h3>
+<p>The chance you hit the date, the realistic date, and three ways to close the gap. From 10,000 simulations of your team's real pace.</p>
+</li>
+</ol>
+</section>
+
+<section>
+<h2>What I read, and what I never see</h2>
+<h3>Read</h3>
+<ul>
+<li>When an item changed status</li>
+<li>When it was created and resolved</li>
+<li>What type of item it is</li>
+</ul>
+<h3>Never read</h3>
+<ul>
+<li>Titles and descriptions</li>
+<li>Comments and attachments</li>
+<li>Who did the work</li>
+</ul>
+<p>Held in memory for 60 minutes, then deleted. Never written to a database. <a href="method.html">Method and data →</a></p>
+</section>
+
+<section>
+<p>Why a chance and not a date</p>
+<h2>Same estimate. Days or weeks.</h2>
+<p>I checked 880 software tasks with the same kind of work, the same estimate and the same process. Half were done within three days. One in twenty took longer than four weeks.</p>
+<p>There was no better number to find. Your own history has the chance for every date.</p>
+<p><a href="index.html#writing">Read the analysis →</a></p>
+<figure>
+<p>[Figure: 880 tasks, same estimate. Half done in 3 days, 1 in 20 over 4 weeks.]</p>
+</figure>
+</section>
+
+<section>
+<h2>One date answered. What about the rest?</h2>
+<p>The Scan covers one project and one date. The Odds Report covers up to five commitments, tells you why each one stands where it does, and what to do this week.</p>
+<p><a href="report.html">See the Odds Report</a></p>
+</section>
+
+<section>
+<h2>Three minutes. One number.</h2>
+<p>Get the odds before the date goes out.</p>
+<p><a href="#scan">Connect your source</a></p>
+</section>
+
+</main>
+
+<footer>
+<p>bart consulting · Bart Pinnock · Ghent, Belgium</p>
+<p><a href="#tail">Tail check</a> · <a href="report.html">Odds Report</a> · <a href="method.html">Method and data</a> · <a href="#privacy">Privacy</a></p>
+</footer>
+
+</body>
+</html>

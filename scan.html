@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex">
 <title>Delivery Scan · bart consulting</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
 <nav class="nav" aria-label="Main">
 <a href="scan.html" aria-current="page">Scan</a>
 <a href="forecast.html">Forecast</a>
-<a href="cases.html">Cases</a>
+<a href="cases.html">In practice</a>
 <a href="index.html#writing">Blog</a>
 <a class="btn sm" href="call.html">Book a call</a>
 </nav>
@@ -42,7 +42,7 @@
 <label class="option"><input type="radio" name="source" value="ado"><span><b>Azure DevOps</b><small>Services and Server 2019 and up. State transitions and closed dates from the last twelve weeks.</small></span></label>
 </fieldset>
 <button class="btn primary block" type="submit">Connect Jira</button>
-<p class="meta">Read-only · held in memory · deleted after 60 minutes · no account</p>
+<p class="meta">Read-only, no account. Only status changes, dates and issue types are used for the calculation. Your data is only held in memory while the forecast runs. The result is kept 90 days, so you can share it.</p>
 </form>
 </div>
 
@@ -81,19 +81,19 @@
 <section><div class="wrap" style="gap:32px;padding-top:72px;padding-bottom:72px">
 <h2>How it works</h2>
 <div class="grid g3">
-<div class="item"><span class="num">01</span><h3>Connect your source</h3><p>Read-only, with the narrowest scope Jira and Azure DevOps offer. I can't change, create or delete anything.</p></div>
+<div class="item"><span class="num">01</span><h3>Connect your source</h3><p>Read-only. I can't change, create or delete anything.</p></div>
 <div class="item"><span class="num">02</span><h3>Pick the project and the date</h3><p>Choose the project that worries you. Check how your statuses map to planned, in progress and done. Enter the date you promised, or the one you're about to.</p></div>
 <div class="item"><span class="num">03</span><h3>Get your number</h3><p>The chance you hit the date, the realistic date, and how to close the gap. From 10,000 simulations of your team's real pace.</p></div>
 </div>
 </div></section>
 
 <section class="band"><div class="wrap">
-<h2>What I read, and what I never see</h2>
+<h2>What is used, and what isn't</h2>
 <div class="grid g2">
-<div class="card"><h3>Read</h3><ul style="gap:4px"><li>When an item changed status</li><li>When it was created and resolved</li><li>What type of item it is</li></ul></div>
-<div class="card"><h3>Never read</h3><ul style="gap:4px"><li>Titles and descriptions</li><li>Comments and attachments</li><li>Who did the work</li></ul></div>
+<div class="card"><h3>Used</h3><ul style="gap:4px"><li>When an item changed status</li><li>When it was created and resolved</li><li>What type of item it is</li></ul></div>
+<div class="card"><h3>Not used</h3><ul style="gap:4px"><li>Titles and descriptions</li><li>Comments and attachments</li><li>Who did the work</li></ul></div>
 </div>
-<p>Held in memory for 60 minutes, then deleted. Never written to a database. <a href="method.html">Method and data →</a></p>
+<p>Your data is only held in memory while the forecast runs. The result is kept 90 days, so you can share it. <a href="method.html">Method and data →</a></p>
 </div></section>
 
 <section><div class="wrap" style="padding-top:72px;padding-bottom:72px">

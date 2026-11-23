@@ -256,3 +256,15 @@ body.phone{max-width:430px;margin:0 auto;background:#fff;min-height:100vh;box-sh
 .outcome .cost b{display:block;font-size:22px;font-weight:700;color:#1a1a1a}
 .outcome .cost small{display:block;font-size:13px;color:#555}
 @media (max-width:760px){.card.outcome{flex-direction:column;gap:12px}.outcome .cost{text-align:left}}
+
+.ai-brief{border-bottom:1px solid #ddd}
+.ai-brief .wrap{max-width:832px;gap:16px;padding-top:56px;padding-bottom:80px}
+.ai-brief h2{font-size:32px}
+.ai-brief details{background:transparent;border:0;border-radius:0;padding:8px 0 0}
+.ai-brief summary{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;font-size:19px;list-style:none}
+.ai-brief summary::-webkit-details-marker{display:none}
+.ai-brief summary::after{content:"+";flex:0 0 28px;height:28px;border:1px solid #999;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:400;font-size:16px;color:#555}
+.ai-brief details[open] summary::after{content:"\2212"}
+.ai-brief .body{display:flex;flex-direction:column;gap:12px;margin-top:20px;font-size:15px}
+.ai-brief .body p{margin:0}
+.ai-brief .body li{font-size:15px}

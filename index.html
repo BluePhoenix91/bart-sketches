@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex">
 <title>bart consulting</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
@@ -31,7 +31,7 @@
 <p class="lead" style="font-size:19px">Every date you've promised has a chance of holding, and your tracker's history already contains it. I turn it into a number you can show, and into what to change while there is still time.</p>
 <div class="btns" style="margin-top:8px"><a class="btn primary" href="scan.html">Run the free Scan</a><a class="btn" href="forecast.html">See what the Delivery Forecast covers</a></div>
 <p style="font-size:15px">Connect Jira or Azure DevOps, read-only. You pick a project and its deadline. Three minutes later you have your number. No call, no account.</p>
-<p class="small">No tracker access yourself? <a href="scan-phone.html">Send this to whoever has it</a>. Got sent a number? <a href="number.html">Read this first</a>. Want the method before the number? <a href="method.html">How it's calculated</a>.</p>
+<p class="small">No tracker access yourself? <a href="scan-phone.html">Send this to whoever has it</a>. Got sent a number? <a href="number.html">Read this first</a>.</p>
 </div>
 
 <aside class="result" aria-label="Example result">
@@ -72,9 +72,13 @@
 <h2>Same estimate. Days or weeks.</h2>
 <p>I checked 880 software tasks with the same kind of work, the same estimate and the same process. Half were done within three days. One in twenty took longer than four weeks.</p>
 <p>It's public data, so you can check it. There was no better estimate to find. Your own history has the chance for every date.</p>
-<a class="strong" href="#writing">Read the analysis →</a>
+<p><strong class="ink">Where does a number like 34% come from?</strong> Take the example at the top: 67 items, promised for March 15. I don't ask the team for a better estimate. I take what they finished in the last twelve weeks, fast weeks and slow ones, and play the 67 items forward 10,000 times. 3,400 of those runs are done by March 15. That's the 34%. The realistic date is the one 8,500 runs made.</p>
+<div class="btns" style="gap:10px;align-items:baseline"><a class="strong" href="#writing">Read the analysis →</a><span aria-hidden="true" style="color:#555">·</span><a class="strong" href="method.html">Method and data →</a></div>
 </div>
+<div class="col" style="gap:16px">
 <div class="ph" role="img" aria-label="Chart: how long 880 same-size tasks took, from days to weeks" style="min-height:260px">Figure: 880 tasks, same estimate. Half done in 3 days, 1 in 20 over 4 weeks.</div>
+<div class="ph" role="img" aria-label="Chart: 10,000 runs of the 67 items become one curve, with 3,400 of them done by March 15" style="min-height:180px">Figure: 10,000 runs become one curve. 3,400 are done by March 15.</div>
+</div>
 </div>
 </div></section>
 
@@ -158,6 +162,18 @@
 <button class="btn primary sm" type="submit" style="min-height:44px">Send me the next one</button>
 <p>I write when I have something to say. No schedule, and nothing else lands in your inbox.</p>
 </form>
+</div></section>
+
+<section id="questions" class="band" style="border-bottom:0"><div class="wrap" style="gap:32px">
+<h2 style="font-size:28px">Before you start</h2>
+<div class="grid g2" style="gap:28px 48px">
+<div class="item" style="gap:6px"><h3 style="font-size:19px">Do you need our estimates or story points?</h3><p>No. The forecast uses what your team finished and when, not what anyone estimated.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">How is this different from the dashboard we already have?</h3><p>A dashboard shows how work moves through your team today. The forecast tells you where you end up, for a date you've already promised to someone.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">What do you read from our tracker?</h3><p>Status changes, created and resolved dates, and issue types. No titles, descriptions, comments or attachments, and not who did the work. The connection is read-only. Your data is only held in memory while the forecast runs. The result is kept 90 days, so you can share it. <a href="scan.html">What is used, and what isn't →</a></p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">We don't use Jira or Azure DevOps.</h3><p>The free Scan connects to Jira Cloud and Azure DevOps. Working with another tracker like Linear? Tell me which one and we can find a solution. Working in Notion, Excel or on a whiteboard? Start with the <a href="setup.html">Delivery Setup</a>.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">Will you contact me afterwards?</h3><p>No. No account, and nobody calls you. If you want to talk, you book it.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">What if our tracker is a mess?</h3><p>That's expected. I don't take your tracker's data at face value. I build a model of how work actually flows before I touch anything. The mess isn't a blocker. It's where I start.</p></div>
+</div>
 </div></section>
 
 <section id="call" class="dark"><div class="wrap" style="padding-top:72px;padding-bottom:72px">

@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex">
 <title>Sample Delivery Forecast · bart consulting</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -27,9 +27,9 @@
 <div class="between">
 <div class="col" style="gap:4px;flex:1 1 520px">
 <p class="eyebrow">Sample forecast</p>
-<p class="ink" style="font-size:17px">A full Delivery Forecast for a fictional company. Yours has your roadmap, your dates and your numbers, in Dutch or English.</p>
+<p class="ink" style="font-size:17px">A full Delivery Forecast for a fictional company. Yours is about your team: your deadlines, your numbers and what I find in them, in Dutch or English.</p>
 </div>
-<div class="btns"><a class="btn primary sm" href="forecast.html#book">Book the scoping call</a><button class="btn sm" type="button">Download as PDF</button></div>
+<div class="btns"><a class="btn primary sm" href="forecast.html#book">Book the first call</a><button class="btn sm" type="button">Download as PDF</button></div>
 </div>
 </div></section>
 
@@ -43,7 +43,7 @@
 
 <section>
 <div><p class="eyebrow">Page 1 · for your CEO or board</p><h1 class="md" style="margin-top:4px">What you need to know</h1></div>
-<p class="note" style="font-size:17px;padding:18px">AC-ME has promised four dates for the first half of 2027. Checked one at a time, all four look safe. Built in the order the team plans, the first two hold, the third is a coin flip and the fourth is late. The team's pace is steady. There is more work than time, and the last date realistically lands about three weeks late.</p>
+<p class="note" style="font-size:17px;padding:18px">AC-ME has promised four dates for the first half of 2027. Checked one at a time, all four look safe. Built in the order the team plans, the first two hold, the third is a coin flip and the fourth is late. The team's pace is steady. There is more work than time, and the last date realistically lands about three weeks late. What is holding the dates back: work waits for a review, work is started out of order, and the customer portal is still growing.</p>
 
 <div>
 <div class="status-row">
@@ -65,17 +65,18 @@
 </div>
 
 <div class="col tight">
-<h2 style="font-size:20px">This week</h2>
+<h2 style="font-size:20px">What to change first</h2>
 <ol style="padding-left:22px">
 <li><strong>Decide which date can move:</strong> the mobile app refresh or the reporting dashboard. Both can't hold.</li>
 <li><strong>Finish in order.</strong> Stop starting work on the mobile refresh and the dashboard until payments has shipped.</li>
+<li><strong>Review before starting new work.</strong> 7 items are built and waiting for a review today. A waiting review goes before anything new.</li>
 <li><strong>Close the scope of the customer portal.</strong> It grew by 9 items since December, and every item pushes the two deadlines behind it.</li>
 </ol>
 </div>
 </section>
 
 <section>
-<div><p class="eyebrow">The roadmap, in order</p><h2 style="margin-top:4px">Four deadlines, the same team</h2></div>
+<div><p class="eyebrow">The roadmap, in order</p><h2 style="margin-top:4px">The same team behind every deadline</h2></div>
 <p>Look at one deadline at a time and ask: if the team did only this, would it make it? Four times the answer is yes. But the team can't do four things as if each were the only one. This forecast takes the work in the order AC-ME plans to build it, and does not count the team twice.</p>
 <figure class="col" style="gap:10px">
 <figcaption class="strong ink">When each one is realistically done, against the date that was promised</figcaption>
@@ -133,10 +134,10 @@
 </section>
 
 <section>
-<div><p class="eyebrow">What I found in the data</p><h2 style="margin-top:4px">Why the last date is late</h2></div>
+<div><p class="eyebrow">What I found in the data</p><h2 style="margin-top:4px">What is holding the dates back</h2></div>
 <ul style="gap:10px">
-<li><strong class="ink">The pace is steady.</strong> The team finished 6 to 12 items a week for twelve weeks, 9 on average. Nothing slowed down and nothing sat stuck for long. This is not a problem with the team.</li>
-<li><strong class="ink">There is more work than time.</strong> 196 items are left. Twenty weeks at this pace is about 183. The difference lands on whatever comes last.</li>
+<li><strong class="ink">Work waits for a review.</strong> Over the last twelve weeks an item took three weeks from start to done on average. For five of those days it was built and waiting for a review. 7 of the 27 items in progress are waiting today. While an item waits, its developer starts something new. That is how 8 developers came to have 27 items in progress.</li>
+<li><strong class="ink">There is more work than time.</strong> The team finished 6 to 12 items a week for twelve weeks, 9 on average. 196 items are left. Twenty weeks at this pace is about 183. The difference lands on whatever comes last.</li>
 <li><strong class="ink">Work is started out of order.</strong> 11 of the 27 items in progress belong to the mobile refresh and the dashboard. The forecast assumes the team finishes one thing before starting the next. Work started early there doesn't finish early. It makes payments and the portal later.</li>
 <li><strong class="ink">Six portal items wait on the new payment API.</strong> That link is not in the simulation. I found it in the blocker flags. It is another reason to ship payments before anything else.</li>
 <li><strong class="ink">The portal is still growing.</strong> 9 items were added since December. The forecast counts the scope as it stands today.</li>
@@ -227,23 +228,23 @@
 <div class="grid g2" style="gap:20px 32px">
 <div><h3 style="font-size:17px">The data</h3><p style="font-size:15px;margin-top:4px">Workflow data from Jira Cloud, October 2026 to January 2027: when items moved between statuses, when they were created and resolved, blocker flags. No descriptions, comments or code.</p></div>
 <div><h3 style="font-size:17px">The chance</h3><p style="font-size:15px;margin-top:4px">Each deadline was simulated 10,000 times, with the work before it counted first. Every run draws from the team's own finished work and plays the remaining items forward. The chance is the share of runs that finished by the promised date.</p></div>
-<div><h3 style="font-size:17px">The dates</h3><p style="font-size:15px;margin-top:4px">The realistic date is the one that 85 of 100 runs made, the same measure as in the free Scan. It is not a guarantee: 15 of 100 runs finished later.</p></div>
-<div><h3 style="font-size:17px">The limits</h3><p style="font-size:15px;margin-top:4px">The simulation counts today's scope and assumes the work is finished in the planned order. It doesn't know which items wait on each other. Where I found that in the data, it is in the findings, in my words. And it can't see what has never happened to this team.</p></div>
+<div><h3 style="font-size:17px">The dates</h3><p style="font-size:15px;margin-top:4px">The realistic date is the one that 85 of 100 runs made, the same measure as in the free Delivery Scan. It is not a guarantee: 15 of 100 runs finished later.</p></div>
+<div><h3 style="font-size:17px">The limits</h3><p style="font-size:15px;margin-top:4px">These numbers are the best case. The simulation counts today's scope, and assumes the team keeps its recent pace and finishes the work in the planned order. It doesn't know which items wait on each other. Where I found that in the data, it is in the findings, in my words. And it can't see what has never happened to this team.</p></div>
 </div>
 </section>
 
 <section style="gap:10px">
 <h2 style="font-size:24px">What happens next</h2>
-<p>On 8 February I run the same numbers again and send you a short note on what moved. By then payments should have shipped, and you will know whether the order held. If finishing in order turns out to be the hard part, that is a conversation about the Delivery Realign.</p>
+<p>On 8 February I run the same numbers again. That second run measures whether the changes worked: whether payments shipped before anything else was started, whether items still wait five days for a review, and whether the scope of the portal stayed closed. You get a short note on what moved and what didn't. If finishing in order turns out to be the hard part, that is a conversation about the Delivery Realign.</p>
 </section>
 
 </article>
 </div>
 
 <section class="dark"><div class="wrap">
-<h2 style="font-size:34px">Want this for your own roadmap?</h2>
-<p class="lead narrow">Your roadmap, up to a year ahead. €4,500, second run included. It starts with a 30 minute call.</p>
-<div class="btns" style="margin-top:8px"><a class="btn" href="forecast.html#book">Book the scoping call</a><a class="btn ghost" href="forecast.html">Back to the forecast page</a></div>
+<h2 style="font-size:34px">Want this for your own team?</h2>
+<p class="lead narrow">One deadline or a whole roadmap, up to a year ahead. €4,500, second run included. It starts with a free 30 minute call.</p>
+<div class="btns" style="margin-top:8px"><a class="btn" href="forecast.html#book">Book the first call</a><a class="btn ghost" href="forecast.html">Back to the Delivery Forecast</a></div>
 </div></section>
 
 </main>

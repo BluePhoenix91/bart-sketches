@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex">
 <title>Method and data · bart consulting</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -26,7 +26,7 @@
 <section><div class="wrap" style="padding-bottom:48px;gap:16px">
 <p class="eyebrow">Method and data</p>
 <h1 style="max-width:860px">How the forecast is made, and what happens to your data.</h1>
-<p class="lead narrow">The same method sits behind the free Scan and the Delivery Forecast. This page is the one to send to whoever has to approve the connection.</p>
+<p class="lead narrow">The same method sits behind the free Delivery Scan and the Delivery Forecast. It is a standard method, and it fits on this page. This is the page to send to whoever has to approve the connection.</p>
 </div></section>
 
 <section class="band"><div class="wrap" style="gap:28px;padding-top:56px;padding-bottom:56px">
@@ -45,6 +45,7 @@
 <div class="card line" style="gap:8px"><h3>It captures</h3><p>The full range of speeds your team has actually had. The weeks reviews dragged, someone was out, a dependency didn't land. The patterns your team already lives with.</p></div>
 <div class="card line" style="gap:8px"><h3>It can't</h3><p>Predict what has never happened. If your lead architect leaves next Tuesday, no model saw that coming. That's rarely what catches teams, though. It's the slow build-up of ordinary weeks.</p></div>
 </div>
+<p style="max-width:760px"><strong class="ink">The chance is the best case.</strong> It assumes the work stays as it is today and your team keeps its recent pace. Most teams add work along the way. Then the real date is later than the number says. The calculation is the easy part. Holding the date is the work.</p>
 <p style="max-width:760px"><strong class="ink">The realistic date</strong> is the date that 85 of 100 runs finished by. It is not a promise: 15 finished later.</p>
 <p style="max-width:760px"><strong class="ink">For a roadmap</strong>, the Delivery Forecast never counts your team twice. The work behind each deadline is forecast in the order you plan to build it, on top of what comes before. It does not simulate dependencies between items. Where one thing waits on another, I read that in the data and report it in words.</p>
 </div></section>
@@ -59,9 +60,9 @@
 <tbody>
 <tr><th scope="row">I use</th><td>Status changes, created and resolved dates, issue types. The last twelve weeks.</td><td>The same, further back. Plus blocker flags, how items group into epics, when items were added, sprint boundaries.</td></tr>
 <tr><th scope="row">I don't use</th><td>Titles, descriptions, comments, attachments.</td><td>Descriptions, comments, attachments, code.</td></tr>
-<tr><th scope="row">How it connects</th><td>Read-only sign-in with Jira or Azure DevOps. I can't change, create or delete anything.</td><td>The same read-only connection. Or a file export you look through before you send it.</td></tr>
+<tr><th scope="row">How it connects</th><td>Read-only connection to Jira or Azure DevOps. I can't change, create or delete anything.</td><td>The same read-only connection. Or a file export you look through before you send it.</td></tr>
 <tr><th scope="row">How long it's kept</th><td>Your data is only held in memory while the forecast runs. The result is kept 90 days, so you can share it.</td><td>Until the second run, four weeks after the forecast. Then deleted.</td></tr>
-<tr><th scope="row">If you ask for a reminder</th><td>I keep your email address and the result. Your selection (project, items and date) only if you tick the box. Nothing from the tracker, and not your sign-in.</td><td>Not needed. The second run is part of the forecast.</td></tr>
+<tr><th scope="row">If you ask for a reminder</th><td>I keep your email address and the result. Your selection (project, items and date) only if you tick the box. Nothing from the tracker, and no access to it.</td><td>Not needed. The second run is part of the forecast.</td></tr>
 <tr><th scope="row">Who sees the result</th><td>You, and whoever you share the link with.</td><td>You and me. Nobody else, unless you forward it.</td></tr>
 </tbody>
 </table>
@@ -73,7 +74,7 @@
 <div class="split top" style="gap:48px">
 <div class="col" style="gap:10px">
 <h2 class="sm">Why not a dashboard?</h2>
-<p>Tools like ActionableAgile, LinearB or Jellyfish are good at what they do: they show an engineering team its own flow. They tell you where you are.</p>
+<p>Tools like ActionableAgile, LinearB or Jellyfish are good at what they do: they show an engineering team how its work moves. They tell you where you are.</p>
 <p>The forecast tells you where you're going to end up, for a date you've already promised to someone.</p>
 </div>
 <div class="col" style="gap:10px">

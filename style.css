@@ -249,3 +249,10 @@ body.phone{max-width:430px;margin:0 auto;background:#fff;min-height:100vh;box-sh
   .paper>.card{padding:24px;gap:32px}
   .card.roomy{padding:24px}
 }
+
+.card.outcome{flex-direction:row;gap:32px;align-items:flex-start;justify-content:space-between}
+.outcome .body{display:flex;flex-direction:column;gap:8px;max-width:760px}
+.outcome .cost{text-align:right;white-space:nowrap}
+.outcome .cost b{display:block;font-size:22px;font-weight:700;color:#1a1a1a}
+.outcome .cost small{display:block;font-size:13px;color:#555}
+@media (max-width:760px){.card.outcome{flex-direction:column;gap:12px}.outcome .cost{text-align:left}}

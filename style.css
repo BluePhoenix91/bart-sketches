@@ -127,6 +127,9 @@ table.nums td,table.nums thead th:not(:first-child){text-align:right}
 .legend{display:flex;gap:20px;flex-wrap:wrap;font-size:13px;color:#555}
 .legend span{display:inline-flex;align-items:center;gap:6px}
 
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#333;cursor:pointer}
+.check input{margin:2px 0 0;width:18px;height:18px;flex:none}
+
 /* the result card */
 .result{background:#fff;border:2px solid #1a1a1a;border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:16px}
 .result .head{display:flex;justify-content:space-between;align-items:center;gap:12px}

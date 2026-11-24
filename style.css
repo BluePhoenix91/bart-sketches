@@ -260,7 +260,7 @@ body.phone{max-width:430px;margin:0 auto;background:#fff;min-height:100vh;box-sh
 
 .ai-brief{border-bottom:1px solid #ddd}
 .ai-brief .wrap{max-width:832px;gap:16px;padding-top:56px;padding-bottom:80px}
-.ai-brief h2{font-size:32px}
+.ai-brief h2{font-size:28px;line-height:1.2}
 .ai-brief details{background:transparent;border:0;border-radius:0;padding:8px 0 0}
 .ai-brief summary{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;font-size:19px;list-style:none}
 .ai-brief summary::-webkit-details-marker{display:none}
@@ -269,3 +269,5 @@ body.phone{max-width:430px;margin:0 auto;background:#fff;min-height:100vh;box-sh
 .ai-brief .body{display:flex;flex-direction:column;gap:12px;margin-top:20px;font-size:15px}
 .ai-brief .body p{margin:0}
 .ai-brief .body li{font-size:15px}
+.ai-brief summary h2{margin:0;flex:1}
+.ai-brief summary::after{margin-top:4px}

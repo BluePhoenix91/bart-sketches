@@ -88,13 +88,13 @@
        "priceCurrency": "EUR",
        "valueAddedTaxIncluded": false
       },
-      "description": "Fixed price, VAT excluded. Up to five deadlines, up to a year ahead. Ready 14 days after a free 30 minute first call. A second run four weeks later is included.",
+      "description": "Fixed price, VAT excluded. Up to five deadlines, up to a year ahead. Ready 14 days after a free 30 minute first call. A second measurement four weeks later is included.",
       "itemOffered": {
        "@type": "Service",
-       "@id": "https://bluephoenix91.github.io/bart-sketches/#delivery-forecast",
-       "name": "Delivery Forecast",
-       "url": "https://bluephoenix91.github.io/bart-sketches/forecast.html",
-       "description": "The Delivery Forecast is a written report by Bart Pinnock on why a software team's promised dates are at risk. It says what is holding the dates back, what to change first, and the chance of making each deadline. €4,500 excluding VAT, a fixed price."
+       "@id": "https://bluephoenix91.github.io/bart-sketches/#delivery-audit",
+       "name": "Delivery Audit",
+       "url": "https://bluephoenix91.github.io/bart-sketches/audit.html",
+       "description": "The Delivery Audit is a written report by Bart Pinnock on why a software team's promised dates are at risk. It says what is holding the dates back, what to change first, and the chance of making each deadline. €4,500 excluding VAT, a fixed price."
       }
      },
      {
@@ -112,7 +112,7 @@
        "@id": "https://bluephoenix91.github.io/bart-sketches/#delivery-realign",
        "name": "Delivery Realign",
        "url": "https://bluephoenix91.github.io/bart-sketches/realign.html",
-       "description": "For when the forecast shows that the way of working is what costs a team its dates. Bart Pinnock fixes it together with the team, one team at a time. Phase 1 is two days: see how work really moves, rebuild the board and write a priority list for four weeks. The client can stop there. Phase 2 (four to six weeks) and phase 3 (two weeks, handover) follow when needed. The Delivery Forecast runs three times, so the result is measured. In Dutch or English."
+       "description": "For when the audit shows that the way of working is what costs a team its dates. Bart Pinnock fixes it together with the team, one team at a time. Phase 1 is two days: see how work really moves, rebuild the board and write a priority list for four weeks. The client can stop there. Phase 2 (four to six weeks) and phase 3 (two weeks, handover) follow when needed. The dates are measured three times, so the result is visible. In Dutch or English."
       }
      },
      {
@@ -199,7 +199,7 @@
      "name": "Is the free Scan enough on its own?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "If you can still move the date or cut scope, yes. You get the chance, the realistic date and how much of each closes the gap, and it's free to run again next month. When neither can move, the Delivery Forecast starts from the same calculation and finds what is holding the date back, like finished work that waits days for a review."
+      "text": "If you can still move the date or cut scope, yes. You get the chance, the realistic date and how much of each closes the gap, and it's free to run again next month. When neither can move, the Delivery Audit starts from the same calculation and finds what is holding the date back, like finished work that waits days for a review."
      }
     },
     {
@@ -231,7 +231,7 @@
      "name": "What if our tracker is a mess?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "The Scan still runs. It counts an item as done on the day your tracker marks it resolved. If your releases come later than that, so does your real date. Checking what \"done\" means in your team is part of the Delivery Forecast."
+      "text": "The Scan still runs. It counts an item as done on the day your tracker marks it resolved. If your releases come later than that, so does your real date. Checking what \"done\" means in your team is part of the Delivery Audit."
      }
     }
    ]
@@ -247,7 +247,7 @@
 <a class="logo" href="index.html">bart consulting</a>
 <nav class="nav" aria-label="Main">
 <a href="scan.html">Scan</a>
-<a href="forecast.html">Forecast</a>
+<a href="audit.html">Audit</a>
 <a href="cases.html">In practice</a>
 <a href="#writing">Blog</a>
 <a class="btn sm" href="call.html">Book a call</a>
@@ -339,15 +339,15 @@
 <article class="card strong outcome">
 <div class="body">
 <h3 class="lg">It's low, and the date can't move.</h3>
-<p>Neither can the scope. Then something will give anyway, and it is better to choose what. The Delivery Forecast gives you, in writing:</p>
+<p>Neither can the scope. Then something will give anyway, and it is better to choose what. The Delivery Audit gives you, in writing:</p>
 <ul>
 <li>Where this date really lands, and what each option does to it. So you can tell your client now, not in the last week.</li>
 <li>What held it back, and what to change, in order. This part is for your next date. In the sample: finished work waits five days for a review, so reviews go before new work.</li>
 </ul>
 <p>Four weeks later I measure the same things again, so you see what moved.</p>
-<div class="btns" style="gap:18px;margin-top:4px"><a class="strong" href="forecast.html">What's in the Forecast →</a><a class="strong" href="sample-forecast.html">Read a sample →</a></div>
+<div class="btns" style="gap:18px;margin-top:4px"><a class="strong" href="audit.html">What's in the Audit →</a><a class="strong" href="sample-audit.html">Read a sample →</a></div>
 </div>
-<p class="cost"><small>Delivery Forecast</small> <b>€4,500</b> <small>second run included</small></p>
+<p class="cost"><small>Delivery Audit</small> <b>€4,500</b> <small>second measurement included</small></p>
 </article>
 </div>
 <a class="btn primary self-start" href="scan.html">Run the free Scan</a>
@@ -408,11 +408,11 @@
 <div class="item" style="gap:6px"><h3 style="font-size:19px">Do you need our estimates or story points?</h3><p>No. The forecast uses what your team finished and when, not what anyone estimated.</p></div>
 <div class="item" style="gap:6px"><h3 style="font-size:19px">How is this different from the dashboard we already have?</h3><p>A dashboard shows how work moves through your team today. The forecast tells you where you end up, for a date you've already promised to someone.</p></div>
 <div class="item" style="gap:6px"><h3 style="font-size:19px">How do I know the number is right?</h3><p>It isn't an opinion. It's your team's own last twelve weeks, played forward. The <a href="method.html">method and the data behind it</a> are public, and running it again next month shows whether the date is getting closer.</p></div>
-<div class="item" style="gap:6px"><h3 style="font-size:19px">Is the free Scan enough on its own?</h3><p>If you can still move the date or cut scope, yes. You get the chance, the realistic date and how much of each closes the gap, and it's free to run again next month. When neither can move, the Delivery Forecast starts from the same calculation and finds what is holding the date back, like finished work that waits days for a review.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">Is the free Scan enough on its own?</h3><p>If you can still move the date or cut scope, yes. You get the chance, the realistic date and how much of each closes the gap, and it's free to run again next month. When neither can move, the Delivery Audit starts from the same calculation and finds what is holding the date back, like finished work that waits days for a review.</p></div>
 <div class="item" style="gap:6px"><h3 style="font-size:19px">What do you read from our tracker?</h3><p>Status changes, created and resolved dates, and issue types. No titles, descriptions, comments or attachments, and not who did the work. The connection is read-only. Your data is only held in memory while the forecast runs. The result is kept 90 days, so you can share it. <a href="scan.html">What is used, and what isn't →</a></p></div>
 <div class="item" style="gap:6px"><h3 style="font-size:19px">We don't use Jira or Azure DevOps.</h3><p>The free Scan connects to Jira Cloud and Azure DevOps. Working with another tracker like Linear? Tell me which one and we can find a solution. Working in Notion, Excel or on a whiteboard? Start with the <a href="setup.html">Delivery Setup</a>.</p></div>
 <div class="item" style="gap:6px"><h3 style="font-size:19px">Will you contact me afterwards?</h3><p>No. No account, and nobody calls you. If you want to talk, you book it.</p></div>
-<div class="item" style="gap:6px"><h3 style="font-size:19px">What if our tracker is a mess?</h3><p>The Scan still runs. It counts an item as done on the day your tracker marks it resolved. If your releases come later than that, so does your real date. Checking what "done" means in your team is part of the Delivery Forecast.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">What if our tracker is a mess?</h3><p>The Scan still runs. It counts an item as done on the day your tracker marks it resolved. If your releases come later than that, so does your real date. Checking what "done" means in your team is part of the Delivery Audit.</p></div>
 </div>
 </div></section>
 
@@ -431,8 +431,8 @@
 <p><b>For whom:</b> CTOs and heads of engineering at software companies of 10 to 50 people who promised a date to a client or to their CEO and are not sure it will hold.</p>
 <p><b>How it works:</b> no estimates or story points. The forecast takes what the team finished, plays the remaining work forward 10,000 times (a Monte Carlo simulation) and counts the runs that are done by the date. That share is the chance. The realistic date is the one 85 of 100 runs made. <a href="method.html">Method and data</a>.</p>
 <p><b>Start here:</b> the free <a href="scan.html">Delivery Scan</a>. A tool the team runs itself: connect Jira Cloud or Azure DevOps read-only, pick a project and its deadline. In about three minutes it gives the chance of making the deadline, the realistic date, and how much later or how much scope cutting closes the gap. It uses the last twelve weeks. Free to run again. No account.</p>
-<p><b>When the chance is low and the date can't move:</b> the <a href="forecast.html">Delivery Forecast</a>, €4,500 excluding VAT. It starts with a detailed model of how work moves through the team. The same calculation as the Scan then runs on that model, for up to five deadlines, up to a year ahead.</p>
-<p>The report gives the chance for each deadline, the main reasons a date may be missed, and a list of ways to improve the workflow, with a one-page summary for the CEO. Ready 14 days after a free 30 minute call. Four weeks later the same numbers are run again.</p>
+<p><b>When the chance is low and the date can't move:</b> the <a href="audit.html">Delivery Audit</a>, €4,500 excluding VAT. It starts with a detailed model of how work moves through the team. The same calculation as the Scan then runs on that model, for up to five deadlines, up to a year ahead.</p>
+<p>The report gives the chance for each deadline, the main reasons a date may be missed, and a list of ways to improve the workflow, with a one-page summary for the CEO. Ready 14 days after a free 30 minute call. Four weeks later the same things are measured again.</p>
 <p><b>Also:</b> the <a href="realign.html">Delivery Realign</a> (from €7,500, starts with two days with the team) when the way of working is what costs the dates. The <a href="setup.html">Delivery Setup</a> (€450, four hours) for teams working in Notion, Excel or on a whiteboard.</p>
 <p><b>Data:</b> read-only. Status changes, created and resolved dates, issue types. No titles, descriptions, comments, attachments, or who did the work. Held in memory while the forecast runs. The result is kept 90 days.</p>
 <p><b>Not a fit if:</b> the question is what to build, not when it lands. You want Scrum or SAFe installed. You need someone in the delivery seat for six months.</p>
@@ -447,7 +447,7 @@
 <footer class="site-footer cols" style="border-top:0"><div class="wrap">
 <div><b style="font-size:16px">bart consulting</b><p class="small">Bart Pinnock tells software teams the chance they make the dates they've promised, and helps them improve it. Ghent, Belgium.</p><div class="small" style="margin-top:16px;display:flex;flex-direction:column;gap:2px"><div>Bart Pinnock · Kopenhagenstraat 4/405, 9000 Ghent, Belgium</div><div>NimFlex BV · VAT BE 0790.181.695</div><a href="mailto:bart@bart.consulting" style="align-self:flex-start;margin-top:4px">bart@bart.consulting</a></div></div>
 <div><b>Free tools</b><a href="scan.html">Delivery Scan</a><a href="#tail">Tail check</a></div>
-<div><b>Services</b><a href="forecast.html">Delivery Forecast</a><a href="realign.html">Delivery Realign</a><a href="method.html">Method and data</a></div>
+<div><b>Services</b><a href="audit.html">Delivery Audit</a><a href="realign.html">Delivery Realign</a><a href="method.html">Method and data</a></div>
 <div><b>More</b><a href="cases.html">In practice</a><a href="#writing">Blog</a><a href="#privacy">Privacy</a></div>
 </div></footer>
 

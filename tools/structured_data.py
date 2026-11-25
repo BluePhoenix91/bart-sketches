@@ -204,15 +204,15 @@ SERVICES = {
         "terms": "Free. Read-only, no account. Free to run again.",
         "guards": ["three minutes", "Jira", "Azure DevOps", "Read-only", "twelve weeks", "10,000", "scope cutting"],
     },
-    "forecast": {
-        "page": "forecast.html",
-        "name": "Delivery Forecast",
-        "type": "Written delivery forecast with findings and recommendations",
+    "audit": {
+        "page": "audit.html",
+        "name": "Delivery Audit",
+        "type": "Written delivery audit with findings and recommendations",
         "description": None,  # the "In short" line of the page's own AI brief
         "price": "4500",
         "terms": (
             "Fixed price, VAT excluded. Up to five deadlines, up to a year ahead. Ready 14 days after a "
-            "free 30 minute first call. A second run four weeks later is included."
+            "free 30 minute first call. A second measurement four weeks later is included."
         ),
         "guards": ["€4,500", "VAT excluded", "five deadlines", "up to a year ahead", "14 days", "four weeks later", "30 minutes, free"],
     },
@@ -221,18 +221,18 @@ SERVICES = {
         "name": "Delivery Realign",
         "type": "Hands-on work with a software team on its way of working",
         "description": (
-            "For when the forecast shows that the way of working is what costs a team its dates. Bart "
+            "For when the audit shows that the way of working is what costs a team its dates. Bart "
             "Pinnock fixes it together with the team, one team at a time. Phase 1 is two days: see how "
             "work really moves, rebuild the board and write a priority list for four weeks. The client "
             "can stop there. Phase 2 (four to six weeks) and phase 3 (two weeks, handover) follow when "
-            "needed. The Delivery Forecast runs three times, so the result is measured. In Dutch or English."
+            "needed. The dates are measured three times, so the result is visible. In Dutch or English."
         ),
         "min_price": "7500",
         "terms": (
             "From €7,500, VAT excluded. Phase 1 is two days at a fixed €7,500. Phases 2 and 3 are a "
             "fixed price per team, agreed after phase 1."
         ),
-        "guards": ["From €7,500", "€7,500 fixed", "VAT excluded", "Two days", "Four to six weeks", "Fixed price per team", "runs three times", "You can stop here"],
+        "guards": ["From €7,500", "€7,500 fixed", "VAT excluded", "Two days", "Four to six weeks", "Fixed price per team", "measured three times", "You can stop here"],
     },
     "setup": {
         "page": "setup.html",
@@ -271,7 +271,7 @@ CASES = [
 ]
 
 SAMPLE_DESCRIPTION = (
-    "A full sample Delivery Forecast for a fictional company: what is holding its dates back, what to "
+    "A full sample Delivery Audit for a fictional company: what is holding its dates back, what to "
     "change first, and the chance on each deadline."
 )
 
@@ -413,8 +413,8 @@ def scan(docs):
     return [service("scan", docs)]
 
 
-def forecast(docs):
-    return [service("forecast", docs), faq_page(docs["forecast.html"], about={"@id": service_id("forecast")})]
+def audit(docs):
+    return [service("audit", docs), faq_page(docs["audit.html"], about={"@id": service_id("audit")})]
 
 
 def realign(docs):
@@ -445,7 +445,7 @@ def cases(docs):
 
 def method(docs):
     doc = docs["method.html"]
-    return [web_page("method.html", h1(doc), lead(doc), [service_ref("scan"), service_ref("forecast")])]
+    return [web_page("method.html", h1(doc), lead(doc), [service_ref("scan"), service_ref("audit")])]
 
 
 def call(docs):
@@ -470,17 +470,17 @@ def scan_phone(docs):
 
 
 def sample(docs):
-    doc = docs["sample-forecast.html"]
-    guard("sample-forecast.html", doc, ["A full Delivery Forecast for a fictional company", "What is holding the dates back"])
-    return [web_page("sample-forecast.html", "Sample Delivery Forecast", SAMPLE_DESCRIPTION, service_ref("forecast"))]
+    doc = docs["sample-audit.html"]
+    guard("sample-audit.html", doc, ["A full Delivery Audit for a fictional company", "What is holding the dates back"])
+    return [web_page("sample-audit.html", "Sample Delivery Audit", SAMPLE_DESCRIPTION, service_ref("audit"))]
 
 
 # Left out on purpose: the two scan-result pages (one person's result), article-end.html
-# (a block, not a page) and the two redirects.
+# (a block, not a page) and the redirects from old page names.
 PAGES = {
     "index.html": home,
     "scan.html": scan,
-    "forecast.html": forecast,
+    "audit.html": audit,
     "realign.html": realign,
     "setup.html": setup,
     "cases.html": cases,
@@ -488,7 +488,7 @@ PAGES = {
     "call.html": call,
     "number.html": number,
     "scan-phone.html": scan_phone,
-    "sample-forecast.html": sample,
+    "sample-audit.html": sample,
 }
 
 

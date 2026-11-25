@@ -10,8 +10,9 @@ Prices and the few hand-written descriptions live in this file. Each one lists
 phrases that must still be on its page ("guards"). When the copy has moved on,
 the script stops and says which phrase is gone, instead of publishing stale facts.
 
-The markup holds no page URLs, only the business's own (https://bart.consulting/),
-so nothing has to be swapped when these pages move to the real site.
+Every URL in the markup is built from SITE below and stays on the domain these
+pages are served from. When the pages move, change that one line (and the file
+names in page_url, if the paths change).
 """
 import json
 import re
@@ -20,7 +21,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = "https://bart.consulting/"
+SITE = "https://bluephoenix91.github.io/bart-sketches/"
 BUSINESS = SITE + "#business"
 PERSON = SITE + "#bart"
 WEBSITE = SITE + "#website"
@@ -277,6 +278,10 @@ SAMPLE_DESCRIPTION = (
 
 # ---------------------------------------------------------------- building blocks
 
+def page_url(page):
+    return SITE if page == "index.html" else SITE + page
+
+
 def service_id(key):
     return f"{SITE}#delivery-{key}"
 
@@ -286,7 +291,8 @@ def business_ref():
 
 
 def service_ref(key):
-    return {"@type": "Service", "@id": service_id(key), "name": SERVICES[key]["name"]}
+    s = SERVICES[key]
+    return {"@type": "Service", "@id": service_id(key), "name": s["name"], "url": page_url(s["page"])}
 
 
 def service_description(key, docs):
@@ -323,6 +329,7 @@ def service(key, docs):
         "@type": "Service",
         "@id": service_id(key),
         "name": s["name"],
+        "url": page_url(s["page"]),
         "serviceType": s["type"],
         "description": service_description(key, docs),
         "provider": business_ref(),
@@ -341,10 +348,11 @@ def faq_page(doc, about=None):
     return node
 
 
-def web_page(name, description, about, kind="WebPage"):
+def web_page(page, name, description, about, kind="WebPage"):
     return {
         "@type": kind,
         "name": name,
+        "url": page_url(page),
         "description": description,
         "inLanguage": "en",
         "isPartOf": {"@type": "WebSite", "@id": WEBSITE, "name": "bart consulting", "url": SITE},
@@ -371,7 +379,6 @@ def home(docs):
             "@type": "ProfessionalService",
             "@id": BUSINESS,
             "name": "bart consulting",
-            "alternateName": "bart.consulting",
             "legalName": "NimFlex BV",
             "vatID": "BE0790181695",
             "url": SITE,
@@ -425,7 +432,7 @@ def cases(docs):
         problems.append(f"cases.html: the cases on the page are {names}. Update CASES in tools/structured_data.py.")
     for c in CASES:
         guard("cases.html", doc, c["guards"])
-    page = web_page(h1(doc), lead(doc), business_ref(), kind="CollectionPage")
+    page = web_page("cases.html", h1(doc), lead(doc), business_ref(), kind="CollectionPage")
     page["mainEntity"] = {
         "@type": "ItemList",
         "itemListElement": [
@@ -438,13 +445,13 @@ def cases(docs):
 
 def method(docs):
     doc = docs["method.html"]
-    return [web_page(h1(doc), lead(doc), [service_ref("scan"), service_ref("forecast")])]
+    return [web_page("method.html", h1(doc), lead(doc), [service_ref("scan"), service_ref("forecast")])]
 
 
 def call(docs):
     doc = docs["call.html"]
     guard("call.html", doc, ["30 minutes, free", "Dutch or English", "bart@bart.consulting"])
-    page = web_page(h1(doc), lead(doc), None, kind="ContactPage")
+    page = web_page("call.html", h1(doc), lead(doc), None, kind="ContactPage")
     page["mainEntity"] = dict(business_ref(), contactPoint={
         "@type": "ContactPoint", "contactType": "Free 30 minute call", "email": "bart@bart.consulting",
         "availableLanguage": ["nl", "en"],
@@ -454,18 +461,18 @@ def call(docs):
 
 def number(docs):
     doc = docs["number.html"]
-    return [web_page(h1(doc), lead(doc), service_ref("scan"))]
+    return [web_page("number.html", h1(doc), lead(doc), service_ref("scan"))]
 
 
 def scan_phone(docs):
     doc = docs["scan-phone.html"]
-    return [web_page(h1(doc), lead(doc), service_ref("scan"))]
+    return [web_page("scan-phone.html", h1(doc), lead(doc), service_ref("scan"))]
 
 
 def sample(docs):
     doc = docs["sample-forecast.html"]
     guard("sample-forecast.html", doc, ["A full Delivery Forecast for a fictional company", "What is holding the dates back"])
-    return [web_page("Sample Delivery Forecast", SAMPLE_DESCRIPTION, service_ref("forecast"))]
+    return [web_page("sample-forecast.html", "Sample Delivery Forecast", SAMPLE_DESCRIPTION, service_ref("forecast"))]
 
 
 # Left out on purpose: the two scan-result pages (one person's result), article-end.html

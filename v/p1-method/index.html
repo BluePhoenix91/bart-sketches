@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>bart consulting</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../style.css?v=14">
+<style>
+.walk{list-style:none;padding:0;counter-reset:w;gap:14px}
+.walk li{counter-increment:w;display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start}
+.walk li::before{content:counter(w);display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:#1a1a1a;color:#fff;font-weight:600;font-size:14px}
+.walk li p{margin:0}
+.found{border-left:3px solid #1a1a1a;padding:4px 0 4px 16px;display:flex;flex-direction:column;gap:6px}
+.found p{margin:0;font-size:17px;color:#1a1a1a}
+.result-line{border-top:1px solid #ccc;padding-top:12px;margin-top:4px}
+</style>
+</head>
+<body>
+
+<header class="site-header"><div class="wrap">
+<a class="logo" href="../../index.html">bart consulting</a>
+<nav class="nav" aria-label="Main">
+<a href="../../scan.html">Scan</a>
+<a href="../../audit.html">Audit</a>
+<a href="../../cases.html">In practice</a>
+<a href="#writing">Blog</a>
+<a class="btn sm" href="../../call.html">Book a call</a>
+</nav>
+</div></header>
+
+<main>
+
+<section><div class="wrap" style="padding-top:72px;padding-bottom:72px">
+<div class="split">
+<div class="col" style="gap:20px">
+<p class="eyebrow">For CTOs and heads of engineering at software companies of 10 to 50 people</p>
+<h1 class="xl">Know before the client does.</h1>
+<p class="lead" style="font-size:19px">Every date you've promised has a chance of holding, and your tracker's history already contains it. I turn it into a number you can show, and into what to change while there is still time.</p>
+<div class="btns" style="margin-top:8px"><a class="btn primary" href="../../scan.html">Run the free Scan</a> <a class="btn" href="../../method.html">How it's calculated</a></div>
+<p style="font-size:15px">Built from your own tracker history: the chance you make the deadline, the realistic date, and how much later or how much scope cutting closes the gap.<br>Read-only on Jira or Azure DevOps, about three minutes. Free to run again next month.</p>
+<p class="small">No tracker access yourself? <a href="../../scan-phone.html">Send this to whoever has it</a>. Got sent a number? <a href="../../number.html">Read this first</a>.</p>
+</div>
+
+<aside class="result" aria-label="Example result">
+<div class="head"><span class="label">Example result</span> <span class="pill">AT RISK</span></div>
+<div class="odds"><span class="pct">34%</span> <span>chance of shipping <strong>67 items</strong> by <strong>March 15</strong>. About 1 in 3.</span></div>
+<div>
+<div class="scale"><span>MISS LIKELY</span> <span>COIN FLIP</span> <span>HIT LIKELY</span></div>
+<div class="bar"><i style="left:34%"></i></div>
+<div class="scale"><span>0%</span> <span>100%</span></div>
+</div>
+<div class="dates"><div><small>Realistic</small> <b>May 24, 2027</b></div><div><small>Gap</small> <b>10 weeks late</b></div></div>
+<div class="col tight">
+<span class="label">How to close the gap</span>
+<div class="options">
+<div><small>Time</small> <b>Ship later</b> Mar 15 → May 24</div>
+<div><small>Scope</small> <b>Ship less</b> 67 → 42 items</div>
+<div><small>Pace</small> <b>Ship faster</b> 50% more speed</div>
+</div>
+</div>
+<p class="card-foot">Run your own at bart.consulting/scan</p>
+</aside>
+</div>
+</div></section>
+
+<section class="band"><div class="wrap" style="gap:32px">
+<h2>You already know which date is in trouble</h2>
+<div class="grid g3">
+<div class="item"><p role="heading" aria-level="3" class="h3">Everyone says "on track"</p><p>The status meeting is green. Your gut isn't. Without a number, saying so sounds like sandbagging.</p></div>
+<div class="item"><p role="heading" aria-level="3" class="h3">Sales needs a date</p><p>You take the estimate, add a margin and hope it's enough. Nobody can tell you how much margin is enough.</p></div>
+<div class="item"><p role="heading" aria-level="3" class="h3">It slips, and you explain</p><p>The team did its usual month. The date moved anyway. You're the one in front of the client or your CEO.</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap" style="padding-top:72px;padding-bottom:72px">
+<div class="split" style="gap:48px">
+<div class="col" style="gap:12px">
+<p class="eyebrow">Why a chance and not a date</p>
+<h2>Why tasks take very different amounts of time</h2>
+<p>I checked 880 software tasks with the same kind of work, the same estimate and the same process. Half were done within three days. One in twenty took longer than four weeks.</p>
+<p>It's public data, so you can check it. There was no better estimate to find. Your own history has the chance for every date.</p>
+<p><strong class="ink">Where does a number like 34% come from?</strong> Take the example at the top: 67 items, promised for March 15. I don't ask the team for a better estimate. I take what they finished in the last twelve weeks, fast weeks and slow ones, and play the 67 items forward 10,000 times. 3,400 of those runs are done by March 15. That's the 34%. The realistic date is the one 8,500 runs made.</p>
+<div class="btns" style="gap:10px;align-items:baseline"><a class="strong" href="#writing">Read the analysis →</a> <span aria-hidden="true" style="color:#555">·</span> <a class="strong" href="../../method.html">Method and data →</a></div>
+</div>
+<div class="col" style="gap:16px">
+<div class="ph" role="img" aria-label="Chart: how long 880 same-size tasks took, from days to weeks" style="min-height:260px">Figure: 880 tasks, same estimate. Half done in 3 days, 1 in 20 over 4 weeks.</div>
+<div class="ph" role="img" aria-label="Chart: 10,000 runs of the 67 items become one curve, with 3,400 of them done by March 15" style="min-height:180px">Figure: 10,000 runs become one curve. 3,400 are done by March 15.</div>
+</div>
+</div>
+</div></section>
+
+<section class="band"><div class="wrap" style="gap:32px">
+<div class="col tight">
+<h2>What to do with your scan</h2>
+<p style="font-size:17px">If your deadline looks achievable, or you can still move the date or cut scope, the free Scan is all you need.</p>
+</div>
+<div class="col" style="gap:16px">
+<article class="card strong outcome">
+<div class="body">
+<p role="heading" aria-level="3" class="h3 lg">Your deadline looks achievable</p>
+<p>Screenshot the card and bring it to your next status meeting. You're done.</p>
+</div>
+<div class="cost"><b>€0</b></div>
+</article>
+<article class="card strong outcome">
+<div class="body">
+<p role="heading" aria-level="3" class="h3 lg">Your deadline is at risk</p>
+<p>Bring it to your next status meeting too. The card isn't your opinion. It's your team's last twelve weeks, and it shows how much later or how much less closes the gap. So the question in the room is which one, while there is still time. The card links to a page that explains the number to whoever you show it to.</p>
+<p>Run the Scan again next month and see whether it moved.</p>
+<a class="strong self-start" href="../../call.html">Rather talk it through? Book a free 30 minute call →</a>
+</div>
+<div class="cost"><b>€0</b></div>
+</article>
+<article class="card strong outcome">
+<div class="body">
+<p role="heading" aria-level="3" class="h3 lg">Your deadline is at risk, and the date can't move.</p>
+<p>Neither can the scope. Then something will give anyway, and it is better to choose what. The Delivery Audit gives you, in writing:</p>
+<ul>
+<li>Where this date really lands, and what each option does to it. So you can tell your client now, not in the last week.</li>
+<li>What held it back, and what to change, in order. This part is for your next date. In the sample: finished work waits five days for a review, so reviews go before new work.</li>
+</ul>
+<p>Four weeks later I measure the same things again, so you see what moved.</p>
+<div class="btns" style="gap:18px;margin-top:4px"><a class="strong" href="../../audit.html">What's in the Audit →</a> <a class="strong" href="../../sample-audit.html">Read a sample →</a></div>
+</div>
+<p class="cost"><small>Delivery Audit</small> <b>€4,500</b> <small>second measurement included</small></p>
+</article>
+</div>
+<a class="btn primary self-start" href="../../scan.html">Run the free Scan</a>
+<p class="ink" style="font-size:16px"><strong>Working in Notion, Excel or on a whiteboard?</strong> Start with the <a href="../../setup.html">Delivery Setup</a>.</p>
+</div></section>
+
+<section id="inside-audit"><div class="wrap" style="gap:32px;padding-top:72px;padding-bottom:72px">
+<div class="col tight">
+<h2>What happens in the Delivery Audit, from first call to the second measurement</h2>
+<p style="font-size:17px">The Delivery Audit costs €4,500 excluding VAT, at a fixed price. It is a written report, but the report is the last step. This is everything before it.</p>
+</div>
+<div class="split" style="gap:48px">
+<div class="col" style="gap:16px">
+<p role="heading" aria-level="3" class="h3 lg">The 14 days</p>
+<ol class="walk">
+<li><p><strong>The first call, free, 30 minutes.</strong> You tell me about your team, the dates you promised and to whom. We agree which deadlines go in, up to five.</p></li>
+<li><p><strong>You connect your tracker.</strong> It is the same read-only connection as the Scan, or a file export you look through before you send it.</p></li>
+<li><p><strong>A working session, 45 to 60 minutes.</strong> With you, and a team lead if useful. How work gets from idea to shipped, what your statuses really mean and what gets built first.</p></li>
+<li><p><strong>I go through your numbers.</strong> I model how work moves through your team and check how it actually moved before I run anything. Then I work out the chance and the realistic date for every deadline.</p></li>
+<li><p><strong>Day 14: the walkthrough.</strong> We go through the audit together for an hour, and you get it as a PDF right after.</p></li>
+<li><p><strong>Four weeks later I measure the same things again</strong> and write down what moved and what didn't.</p></li>
+</ol>
+</div>
+<div class="col" style="gap:16px">
+<p role="heading" aria-level="3" class="h3 lg">What I look at in your tracker</p>
+<p>When work moved between statuses, blocker flags, how items group into epics, created and resolved dates, when items were added, and sprint boundaries. I don't use descriptions, comments, attachments or code.</p>
+<p>I am looking for three things: where work waits, what was added after the date was promised, and what was started too early. The numbers can tell you a date is at risk. They can't tell you why, so I look.</p>
+<p role="heading" aria-level="3" class="h3 lg" style="margin-top:8px">Two findings from the sample audit</p>
+<div class="found"><p>"Over the last twelve weeks an item took three weeks from start to done on average. For five of those days it was built and waiting for a review. 7 of the 27 items in progress are waiting today."</p></div>
+<div class="found"><p>"Six portal items wait on the new payment API. That link is not in the simulation. I found it in the blocker flags. It is another reason to ship payments before anything else."</p></div>
+<p>The sample is a full audit for a fictional company, and you can <a href="../../sample-audit.html">read all of it</a> before you decide.</p>
+</div>
+</div>
+<div class="grid g3">
+<div class="item"><p role="heading" aria-level="3" class="h3">What is in the report</p><p>What is holding your dates back, what to change first, and the chance and the realistic date for every deadline. It also has a page for your CEO, written to be forwarded as it is.</p></div>
+<div class="item"><p role="heading" aria-level="3" class="h3">What a deadline looks like in it</p><p>In the sample, the reporting dashboard has a 23% chance of May 31. The report then shows three ways out: promise June 23, take 30 items out, or build the dashboard before the mobile refresh, which moves the mobile refresh to June 24. It also says which one I would do first and why.</p></div>
+<div class="item"><p role="heading" aria-level="3" class="h3">What the second measurement shows</p><p>In the sample it checks whether payments shipped before anything else was started, whether items still wait five days for a review, and whether the portal's scope stayed closed. You get a short note on what moved and what didn't.</p></div>
+</div>
+<div class="btns" style="gap:18px"><a class="btn primary" href="../../call.html">Book the free first call</a> <a class="strong" href="../../audit.html">What's in the Audit →</a> <a class="strong" href="../../sample-audit.html">Read the sample →</a></div>
+</div></section>
+
+<section id="cases"><div class="wrap" style="gap:32px;padding-top:72px;padding-bottom:72px">
+<div class="col tight">
+<h2>What I did in two teams, step by step</h2>
+<p style="font-size:17px">The results are at the end of each story. What I did comes first, because that is what you would be paying for.</p>
+</div>
+<div class="grid g2">
+<article class="card line">
+<p class="meta">Real estate marketplace for CIB Vlaanderen · first product hire</p>
+<p role="heading" aria-level="3" class="h3 lg">Spotto: the promise I wouldn't make</p>
+<p>Two months after launch the team was me and one developer. I was asked to commit to the quarter's plan: 14 items by 30 June, with at most 10% left undone. I said I couldn't promise it. I had no number, only a feeling.</p>
+<ol class="walk">
+<li><p><strong>I found where work stalled.</strong> Every time the developers handed work over for review or testing, it came back 6 times in 10.</p></li>
+<li><p><strong>I gave them one list in one place for questions.</strong> The developers were emailing the business side and waiting days. I joined their Slack and became the first stop for every question and bug report.</p></li>
+<li><p><strong>I defined "done".</strong> I wrote the acceptance tests down: scenarios for each type of user, with a worked example of useful feedback. I tested releases myself, and held one back the evening before it was due.</p></li>
+<li><p><strong>I planned one quarter at a time.</strong> A short list, checked every week or two. When an urgent feature request came in, we gave a date six weeks out and named what would be dropped to make room.</p></li>
+<li><p><strong>I measured three periods in the tracking history:</strong> before launch, around it and the months after.</p></li>
+</ol>
+<p class="result-line"><strong>Result.</strong> Work that came back after review or testing fell from 61% to 24% to 21%. 13 of the 14 items were accepted by 22 June, eight days early. Three years later I ran a forecast on that team's own record, as it stood on the day I was asked. The plan had an 86% chance of holding.</p>
+<a class="strong" href="../../cases.html">Read the full story →</a>
+</article>
+<article class="card line">
+<p class="meta">Software company · ~12 people · Ghent · agile coach on the team</p>
+<p role="heading" aria-level="3" class="h3 lg">Factry: how an implementation went from 18 months to 6</p>
+<p>Factry builds software that runs on factory floors. Their previous client implementation had taken 18 months and nearly broke the team, and a new client was coming. The technology wasn't the problem. How decisions were made and how work moved was.</p>
+<ol class="walk">
+<li><p><strong>I sat with the machine operators</strong> who would use the system, on the factory floor.</p></li>
+<li><p><strong>I built rough prototypes</strong> and walked them back through those same operators before a line of production code was written. That removed weeks of rework.</p></li>
+<li><p><strong>I looked at the daily meeting.</strong> It had become an hour-long conversation between one developer and the founder while seven people waited.</p></li>
+<li><p><strong>We took the founder out of it.</strong> Five one-hour meetings a week became fifteen minutes each.</p></li>
+</ol>
+<p class="result-line"><strong>Result.</strong> The next comparable client implementation took 6 months instead of 18. Not because of a new framework or tool. Decisions happened faster, the right people were involved at the right time, and the team stopped waiting.</p>
+<a class="strong" href="../../cases.html">Read the full story →</a>
+</article>
+</div>
+<div class="grid g2">
+<figure class="quote"><blockquote>"I can't write a single line of code and I don't understand a word the development team says. But thanks to Bart, everyone knows what's being built, why, and when it's ready."</blockquote><figcaption>Jantien Vanderbeke, Marketing lead, Spotto</figcaption></figure>
+<figure class="quote"><blockquote>"He took the time to understand our complex environment and our constraints to propose the best solution for us."</blockquote><figcaption>Jennifer Imbert Podgorski, Industrial Operations Manager, Lesaffre</figcaption></figure>
+</div>
+</div></section>
+
+<section class="band" id="solo"><div class="wrap" style="gap:32px">
+<h2>One person does the work, so here is what that means for you</h2>
+<div class="grid g3">
+<div class="item"><p role="heading" aria-level="3" class="h3">Who does the work</p><p>I do. Bart Pinnock takes the first call, runs the working session, goes through your numbers, writes the audit and gives the walkthrough. I started as a developer and worked almost ten years in product and delivery roles, at companies like Factry and Spotto. I was the one who had to answer for the date. Now I look from the outside.</p></div>
+<div class="item"><p role="heading" aria-level="3" class="h3">What access I need</p><p>A read-only connection to Jira Cloud or Azure DevOps, or a file export you look through before you send it. I can't change, create or delete anything. Your tracker needs at least twelve weeks of history, however messy. I also need 45 to 60 minutes of your time, and a team lead's if useful.</p></div>
+<div class="item"><p role="heading" aria-level="3" class="h3">What happens to your data</p><p>It is only used for the modeling and for running the numbers. The raw tracker data is never stored. The results and the PDF report are kept, and only you and I see the audit, unless you forward it. If your security or legal team wants to go through this first, I walk them through it, which usually takes ten minutes.</p></div>
+</div>
+<p style="font-size:16px">The calculation is the same one the free Scan uses, and the <a href="../../method.html">method and data page</a> shows how they are made. If the audit shows your team needs help with the change itself, that is the <a href="../../realign.html">Delivery Realign</a>, from €7,500.</p>
+</div></section>
+
+<section><div class="wrap">
+<div class="about">
+<div class="ph" role="img" aria-label="Photo of Bart Pinnock">Photo: Bart</div>
+<div class="col" style="gap:12px">
+<h2 style="font-size:28px">Bart Pinnock</h2>
+<p>I started as a developer. For almost ten years I worked in product and delivery roles at companies like Factry and Spotto, on the boundary between deciding what to build and actually shipping it. That's where most dates fall apart.</p>
+<p>Based in Ghent. I work in Dutch or English. When I'm not doing this, I'm probably outside walking my Weimaraner, da Vinci.</p>
+<div class="btns" style="gap:20px;font-size:15px"><a href="#linkedin">LinkedIn</a> <a href="mailto:bart@bart.consulting">bart@bart.consulting</a></div>
+</div>
+</div>
+</div></section>
+
+<section id="writing"><div class="wrap">
+<h2 style="font-size:28px">Latest writing</h2>
+<div class="grid g3">
+<a class="card" href="#writing" style="padding:20px;gap:8px"><span class="meta">3 November 2026</span> <span class="post">The late date sends you a bill. The safe date never does.</span></a>
+<a class="card" href="#writing" style="padding:20px;gap:8px"><span class="meta">20 October 2026</span> <span class="post">Your team was on time. Your roadmap wasn't.</span></a>
+<a class="card" href="#writing" style="padding:20px;gap:8px"><span class="meta">2 September 2026</span> <span class="post">Finish dates don't exist. Odds do.</span></a>
+</div>
+<form class="subscribe" action="#">
+<label class="field">Get the next article by email<input type="email" name="newsletter" autocomplete="email"></label>
+<button class="btn primary sm" type="submit" style="min-height:44px">Send me the next one</button>
+<p>I write when I have something to say. No schedule, and nothing else lands in your inbox.</p>
+</form>
+</div></section>
+
+<section id="questions" class="band" style="border-bottom:0"><div class="wrap" style="gap:32px">
+<h2 style="font-size:28px">Before you start</h2>
+<div class="grid g2" style="gap:28px 48px">
+<div class="item" style="gap:6px"><h3 style="font-size:19px">Do you need our estimates or story points?</h3><p>No. The forecast uses what your team finished and when, not what anyone estimated.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">How is this different from the dashboard we already have?</h3><p>A dashboard shows how work moves through your team today. The forecast tells you where you end up, for a date you've already promised to someone.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">How do I know the number is right?</h3><p>It isn't an opinion. It's your team's own last twelve weeks, played forward. The <a href="../../method.html">method and the data behind it</a> are public, and running it again next month shows whether the date is getting closer.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">Is the free Scan enough on its own?</h3><p>If you can still move the date or cut scope, yes. You get the chance, the realistic date and how much of each closes the gap, and it's free to run again next month. When neither can move, the Delivery Audit starts from the same calculation and finds what is holding the date back, like finished work that waits days for a review.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">What do you read from our tracker?</h3><p>Status changes, created and resolved dates, and issue types. No titles, descriptions, comments or attachments, and not who did the work. The connection is read-only. Your data is only held in memory while the forecast runs. The result is kept 90 days, so you can share it. <a href="../../scan.html">What is used, and what isn't →</a></p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">We don't use Jira or Azure DevOps.</h3><p>The free Scan connects to Jira Cloud and Azure DevOps. Working with another tracker like Linear? Tell me which one and we can find a solution. Working in Notion, Excel or on a whiteboard? Start with the <a href="../../setup.html">Delivery Setup</a>.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">Will you contact me afterwards?</h3><p>No. No account, and nobody calls you. If you want to talk, you book it.</p></div>
+<div class="item" style="gap:6px"><h3 style="font-size:19px">What if our tracker is a mess?</h3><p>The Scan still runs. It counts an item as done on the day your tracker marks it resolved. If your releases come later than that, so does your real date. Checking what "done" means in your team is part of the Delivery Audit.</p></div>
+</div>
+</div></section>
+
+<section id="call" class="dark"><div class="wrap" style="padding-top:72px;padding-bottom:72px">
+<h2 style="font-size:36px">Start with your number.</h2>
+<p class="lead narrow">Three minutes, read-only, no account. If the number is fine, you're done.</p>
+<div class="btns" style="margin-top:8px"><a class="btn" href="../../scan.html">Run the free Scan</a> <a class="btn ghost" href="../../call.html">Have a number already? Book a call about it</a></div>
+</div></section>
+
+<section class="ai-brief" aria-label="AI brief"><div class="wrap">
+<p class="eyebrow">AI brief</p>
+<details>
+<summary><h2>For the humans: you can stop reading. The rest is for the robots.</h2></summary>
+<div class="body">
+<p><b>In short:</b> Bart Pinnock tells software teams the chance that a promised date holds, from their own tracker history, and what to change to improve it. Independent, based in Ghent, Belgium. Works in Dutch or English.</p>
+<p><b>For whom:</b> CTOs and heads of engineering at software companies of 10 to 50 people who promised a date to a client or to their CEO and are not sure it will hold.</p>
+<p><b>How it works:</b> no estimates or story points. The forecast takes what the team finished, plays the remaining work forward 10,000 times (a Monte Carlo simulation) and counts the runs that are done by the date. That share is the chance. The realistic date is the one 85 of 100 runs made. <a href="../../method.html">Method and data</a>.</p>
+<p><b>Start here:</b> the free <a href="../../scan.html">Delivery Scan</a>. A tool the team runs itself: connect Jira Cloud or Azure DevOps read-only, pick a project and its deadline. In about three minutes it gives the chance of making the deadline, the realistic date, and how much later or how much scope cutting closes the gap. It uses the last twelve weeks. Free to run again. No account.</p>
+<p><b>When the chance is low and the date can't move:</b> the <a href="../../audit.html">Delivery Audit</a>, €4,500 excluding VAT. It starts with a detailed model of how work moves through the team. The same calculation as the Scan then runs on that model, for up to five deadlines, up to a year ahead.</p>
+<p>The report gives the chance for each deadline, the main reasons a date may be missed, and a list of ways to improve the workflow, with a one-page summary for the CEO. Ready 14 days after a free 30 minute call. Four weeks later the same things are measured again.</p>
+<p><b>Also:</b> the <a href="../../realign.html">Delivery Realign</a> (from €7,500, starts with two days with the team) when the way of working is what costs the dates. The <a href="../../setup.html">Delivery Setup</a> (€450, four hours) for teams working in Notion, Excel or on a whiteboard.</p>
+<p><b>Data:</b> read-only. Status changes, created and resolved dates, issue types. No titles, descriptions, comments, attachments, or who did the work. Held in memory while the forecast runs. The result is kept 90 days.</p>
+<p><b>Not a fit if:</b> the question is what to build, not when it lands. You want Scrum or SAFe installed. You need someone in the delivery seat for six months.</p>
+<p><b><a href="../../cases.html">In practice</a>:</b> at Spotto, a quarter plan Bart wouldn't promise landed eight days early. A forecast on that team's own record gave it an 86% chance. Work coming back after review or testing fell from 61% to 21%. At Factry, client implementation time went from 18 months to 6.</p>
+<p><b>Contact:</b> <a href="../../call.html">book a free 30 minute call</a>, or email <a href="mailto:bart@bart.consulting">bart@bart.consulting</a>.</p>
+</div>
+</details>
+</div></section>
+
+</main>
+
+<footer class="site-footer cols" style="border-top:0"><div class="wrap">
+<div><b style="font-size:16px">bart consulting</b><p class="small">Bart Pinnock tells software teams the chance they make the dates they've promised, and helps them improve it. Ghent, Belgium.</p><div class="small" style="margin-top:16px;display:flex;flex-direction:column;gap:2px"><div>Bart Pinnock · Kopenhagenstraat 4/405, 9000 Ghent, Belgium</div><div>NimFlex BV · VAT BE 0790.181.695</div><a href="mailto:bart@bart.consulting" style="align-self:flex-start;margin-top:4px">bart@bart.consulting</a></div></div>
+<div><b>Free tools</b> <a href="../../scan.html">Delivery Scan</a> <a href="#tail">Tail check</a></div>
+<div><b>Services</b> <a href="../../audit.html">Delivery Audit</a> <a href="../../realign.html">Delivery Realign</a> <a href="../../method.html">Method and data</a></div>
+<div><b>More</b> <a href="../../cases.html">In practice</a> <a href="#writing">Blog</a> <a href="#privacy">Privacy</a></div>
+</div></footer>
+
+<dialog open class="cookie" aria-label="Cookie notice"><div class="wrap">
+<div><strong>Legally-not-required cookie banner.</strong> This site uses no cookies. None. Not even one. (Ursula von der Leyen is thrilled.)</div>
+<form method="dialog"><button aria-label="Close cookie notice">×</button></form>
+</div></dialog>
+
+</body>
+</html>

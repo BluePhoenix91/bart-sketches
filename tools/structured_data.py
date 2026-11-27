@@ -169,7 +169,7 @@ def faq(doc):
 
 # ---------------------------------------------------------------- what the copy can't tell us
 
-AUDIENCE_TEXT = "CTOs and heads of engineering at software companies of 10 to 50 people"
+AUDIENCE_TEXT = "CTOs and heads of engineering at software companies"
 AUDIENCE = {
     "@type": "BusinessAudience",
     "audienceType": AUDIENCE_TEXT,
@@ -364,8 +364,10 @@ def web_page(page, name, description, about, kind="WebPage"):
 
 def home(docs):
     doc = docs["index.html"]
+    # The homepage names two offers only (Scan and Audit). The Realign and Setup prices
+    # in the catalog below are guarded on their own pages, not here.
     guard("index.html", doc, [
-        AUDIENCE_TEXT, "€4,500", "€7,500", "€450", "Kopenhagenstraat 4/405", "9000 Ghent", "NimFlex BV",
+        AUDIENCE_TEXT, "€4,500", "Kopenhagenstraat 4/405", "9000 Ghent", "NimFlex BV",
         "BE 0790.181.695", "bart@bart.consulting", "Dutch or English", "almost ten years", "Factry and Spotto",
     ])
     catalog = []

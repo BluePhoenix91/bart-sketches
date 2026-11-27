@@ -275,3 +275,32 @@ body.phone{max-width:430px;margin:0 auto;background:#fff;min-height:100vh;box-sh
 .ai-brief .body li{font-size:15px}
 .ai-brief summary h2{margin:0;flex:1}
 .ai-brief summary::after{margin-top:4px}
+
+/* v/forecasting homepage: a four-step timeline, single-column numbered steps, the audit card */
+.timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.timeline .item{position:relative;border-top:2px solid #1a1a1a;padding:26px 28px 0 0}
+.timeline .item::before{content:"";position:absolute;top:-8px;left:0;width:14px;height:14px;border-radius:50%;background:#1a1a1a}
+.timeline .item:last-child{border-top-color:#9a3412;padding-right:0}
+.timeline .item:last-child::before{background:#9a3412}
+.numbered.one{grid-template-columns:1fr;gap:22px}
+.numbered.one p{font-size:16px}
+.card.audit{padding:0;gap:0;overflow:hidden;border:2px solid #1a1a1a}
+.audit .top{display:flex;gap:32px;align-items:flex-start;justify-content:space-between;padding:24px;background:#1a1a1a}
+.audit .top .h3{color:#fff}
+.audit .top p{color:#e6e6e6}
+.audit .top .cost b{color:#fff}
+.audit .top .cost small{color:#ccc}
+.audit .detail{display:flex;flex-direction:column;gap:14px;padding:28px 24px}
+.audit .detail ul{gap:8px}
+@media (max-width:1000px){
+  .timeline{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:32px}
+  .timeline .item:nth-child(2){padding-right:0}
+}
+@media (max-width:760px){
+  .timeline{grid-template-columns:1fr;row-gap:0}
+  .timeline .item,.timeline .item:last-child{border-top:0;border-left:2px solid #1a1a1a;padding:0 0 28px 24px}
+  .timeline .item:last-child{border-left-color:#9a3412;padding-bottom:0}
+  .timeline .item::before{top:4px;left:-8px}
+  .audit .top{flex-direction:column;gap:12px}
+  .audit .top .cost{text-align:left}
+}
